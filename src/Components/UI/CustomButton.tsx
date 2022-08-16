@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 type props = {
   to: string
-  styles: React.CSSProperties
+  // eslint-disable-next-line react/require-default-props
+  styles?: React.CSSProperties | undefined
   children: string
 }
 

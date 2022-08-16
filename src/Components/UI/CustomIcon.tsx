@@ -1,7 +1,7 @@
 import { Link } from '@mui/material';
 
 type props = {
-  href: string,
+  href: string | undefined,
   iconType: string
 }
 
