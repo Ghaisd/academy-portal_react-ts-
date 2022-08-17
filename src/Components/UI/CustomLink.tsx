@@ -20,7 +20,7 @@ function CustomLink({ to, children, ...props }: props) {
         color: 'white',
       },
       'a:hover': {
-        color: '#909590',
+        color: 'primary.light',
         transition: 'all 400ms ease',
       },
     }}

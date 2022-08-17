@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@mui/material/styles';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
@@ -10,7 +11,7 @@ import About from './pages/about/About';
 import StudentPage from './pages/about/StudentsSection/StudentPage';
 import ErrorPage from './pages/ErrorPage';
 import Home from './pages/home/Home';
-import './index.css';
+import theme from './theme';
 
 export const routes = {
   Home: '/Home',
@@ -25,7 +26,7 @@ export const routes = {
 const App = () => {
   useScrollToTop();
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Navbar />
       <Routes>
         <Route path={routes.Home} element={<Home />} />
@@ -45,7 +46,7 @@ const App = () => {
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
       <Footer />
-    </>
+    </ThemeProvider>
   );
 };
 export default App;

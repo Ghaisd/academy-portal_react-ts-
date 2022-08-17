@@ -15,7 +15,7 @@ const Article = ({
   src, headline, author, articleContent, id,
 }: props) => (
   <Box
-    bgcolor="#474a48"
+    bgcolor="primary.main"
     textAlign="center"
     border="1px solid transparent"
     display="grid"
@@ -26,7 +26,8 @@ const Article = ({
     sx={{
       '&:hover': {
         bgcolor: 'transparent',
-        borderColor: '#537a5a',
+        borderColor: 'secondary.main',
+        transition: 'all 400ms ease',
       },
 
     }}
@@ -42,18 +43,25 @@ const Article = ({
       src={src}
     />
     <Box p="3rem">
-      <Typography variant="h5">{headline}</Typography>
-      <small>
+      <Typography color="textPrimary" variant="h5">{headline}</Typography>
+      <Typography color="textPrimary" variant="subtitle2">
         Skrevet av :
         {` ${author}`}
-      </small>
-      <Typography mt={1.2}>{articleContent}</Typography>
+      </Typography>
+      <Typography
+        color="textPrimary"
+        variant="subtitle1"
+        mt={1.2}
+      >
+        {articleContent}
+
+      </Typography>
     </Box>
     <CustomButton
       to={`${routes.Articles}/${id}`}
       styles={{
         marginBottom: '1rem',
-        background: '#dc3545',
+        background: '#f75842',
         padding: '1rem 2rem',
         borderRadius: '5%',
       }}

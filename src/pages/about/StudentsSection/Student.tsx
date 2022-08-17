@@ -13,7 +13,7 @@ type props = {
 const Student = ({
   src, studentName, smallInfo, GithubLink, LinkedinLink,
 }: props) => (
-  <Box border={10} borderColor="#537a5a" bgcolor="#909590" mr={14}>
+  <Box border={10} borderColor="secondary.main" bgcolor="primary.light" mr={14}>
     <Box display="flex" alignItems="center">
       <Box
         component="img"
@@ -31,8 +31,23 @@ const Student = ({
       </Box>
     </Box>
     <Box>
-      <Typography pt={2} variant="h4" align="center">{studentName}</Typography>
-      <Typography color="#109" pl={2} variant="h6">{smallInfo}</Typography>
+      <Typography
+        pt={2}
+        color="textPrimary"
+        variant="h4"
+        align="center"
+      >
+        {studentName}
+
+      </Typography>
+      <Typography
+        color="#109"
+        pl={2}
+        variant="h6"
+      >
+        {smallInfo}
+
+      </Typography>
     </Box>
   </Box>
 );

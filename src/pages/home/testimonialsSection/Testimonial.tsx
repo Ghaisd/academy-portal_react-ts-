@@ -19,11 +19,20 @@ const Testimonial = ({
     />
 
     <Box textAlign="center">
-      <Typography variant="h6">{name}</Typography>
-      <Typography fontSize={12} pt={1} pb={2}>{role}</Typography>
+      <Typography color="textPrimary" variant="h6">{name}</Typography>
+      <Typography
+        color="textPrimary"
+        variant="subtitle1"
+        fontSize={12}
+        pt={1}
+        pb={2}
+      >
+        {role}
+
+      </Typography>
     </Box>
-    <Box bgcolor="#537a5a" p={4} borderRadius={5}>
-      <Typography>
+    <Box bgcolor="secondary.main" p={4} borderRadius={5}>
+      <Typography color="textPrimary" variant="subtitle2">
         {paragraphText}
       </Typography>
     </Box>

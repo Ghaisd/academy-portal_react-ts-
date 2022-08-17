@@ -7,9 +7,14 @@ import HideOnScroll from './UI/HideOnScroll';
 
 const Navbar = () => (
   <HideOnScroll>
-    <AppBar position="fixed" sx={{ bgcolor: '#537a5a' }}>
+    <AppBar position="fixed" sx={{ bgcolor: 'secondary.main' }}>
       <Toolbar>
-        <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+        <Typography
+          color="textPrimary"
+          variant="h5"
+          component="div"
+          sx={{ flexGrow: 1 }}
+        >
           <CustomLink to="/">
             IKOMM ACADEMY
           </CustomLink>

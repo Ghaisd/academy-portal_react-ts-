@@ -15,7 +15,7 @@ function CustomIcon({ href, iconType }: props) {
       rel="noreferrer"
       sx={{
         '&:hover': {
-          color: '#909590',
+          color: 'primary.light',
           transition: 'all 400ms ease',
         },
       }}

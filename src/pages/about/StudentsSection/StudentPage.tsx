@@ -47,12 +47,13 @@ const StudentPage = () => {
 
         </Typography>
         <br />
-        <Typography variant="h2">
+        <Typography color="textPrimary" variant="h2">
           {`${oneStudent?.Name} ${oneStudent?.LastName}`}
 
         </Typography>
         <br />
         <Typography
+          color="textPrimary"
           variant="h6"
         >
           Student at Ikomm Academy

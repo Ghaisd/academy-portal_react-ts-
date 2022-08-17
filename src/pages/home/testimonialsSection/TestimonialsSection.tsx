@@ -12,7 +12,15 @@ import Testimonial from './Testimonial';
 
 const TestimonialsSection = () => (
   <>
-    <Typography variant="h3" align="center" pt={8}>Testimonials</Typography>
+    <Typography
+      color="textPrimary"
+      variant="h3"
+      align="center"
+      pt={8}
+    >
+      Testimonials
+
+    </Typography>
     <Container
       maxWidth="lg"
       sx={{
@@ -20,13 +28,13 @@ const TestimonialsSection = () => (
         '.swiper-pagination-bullet': {
           borderRadius: 0.1,
           opacity: 1,
-          bgcolor: '#909590',
+          bgcolor: 'primary.light',
         },
         '.swiper-pagination-bullet-active': {
-          bgcolor: '#00bf8e',
+          bgcolor: 'success.main',
         },
         '.swiper-button-next,.swiper-button-prev': {
-          bgcolor: '#909590',
+          bgcolor: 'primary.light',
           color: '#000',
           p: 0.5,
           pr: 1.3,
