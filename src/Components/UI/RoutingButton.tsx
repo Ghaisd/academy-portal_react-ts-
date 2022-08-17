@@ -1,31 +1,28 @@
 import React from 'react';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { SxProps } from '@mui/system';
 
 type props = {
   to: string
   // eslint-disable-next-line react/require-default-props
-  styles?: React.CSSProperties | undefined
+  sx?: SxProps | React.CSSProperties | undefined
+  // eslint-disable-next-line max-len, react/require-default-props
+  color?: 'primary' | 'secondary' | 'inherit' | 'success' | 'error' | 'info' | 'warning' | undefined
   children: string
 }
 
-function CustomButton({ to, styles, children }: props) {
+function CustomButton({
+  to, sx, color, children,
+}: props) {
   return (
     <Button
       component={Link}
       to={to}
+      color={color}
       variant="contained"
       size="medium"
-      sx={{
-        background: '#909590',
-        textTransform: 'none',
-        '&:hover': {
-          background: '#6B6B6B',
-          color: 'white',
-          transition: 'all 400ms ease',
-        },
-      }}
-      style={styles}
+      sx={sx}
     >
       {children}
     </Button>

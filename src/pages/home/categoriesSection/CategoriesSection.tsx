@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import { routes } from '../../../App';
-import CustomButton from '../../../Components/UI/CustomButton';
+import CustomButton from '../../../Components/UI/RoutingButton';
 import categories from '../../../data/categories';
 import { staticTextHome } from '../../../data/staticText';
 import Category from './Category';
@@ -38,10 +38,21 @@ const CategoriesSection = () => (
         {categoriesSectionTextP}
 
       </Typography>
-      <CustomButton to={routes.About}>Les mer</CustomButton>
+      <CustomButton
+        sx={{
+          bgcolor: 'primary.light',
+        }}
+        to={routes.About}
+      >
+        Les mer
+
+      </CustomButton>
       <CustomButton
         to={routes.AcademyTV}
-        styles={{ marginLeft: 16 }}
+        sx={{
+          bgcolor: 'primary.light',
+          ml: 2,
+        }}
       >
         Academy TV
 

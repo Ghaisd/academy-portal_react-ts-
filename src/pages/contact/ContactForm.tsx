@@ -35,7 +35,7 @@ const ContactForm = () => (
         required
       />
     </Box>
-    <Box mb={2} mr={4}>
+    <Box>
       <Input
         type="email"
         placeholder="Din epostadresse"
@@ -53,10 +53,10 @@ const ContactForm = () => (
       variant="contained"
       color="success"
     >
-      <Typography color="textPrimary" variant="subtitle1">
+      {/* <Typography color="textPrimary" variant="subtitle1"> */}
 
-        sende melding
-      </Typography>
+      sende melding
+      {/* </Typography> */}
     </Button>
   </Box>
 );

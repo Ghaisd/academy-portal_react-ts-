@@ -2,7 +2,7 @@ import { Box, Container } from '@mui/system';
 import Grid from '@mui/system/Unstable_Grid/Grid';
 import { Typography } from '@mui/material';
 import CustomLink from './UI/CustomLink';
-import CustomIcon from './UI/CustomIcon';
+import CustomIcon from './UI/InteractiveIcon';
 import { routes } from '../App';
 
 const Footer = () => (

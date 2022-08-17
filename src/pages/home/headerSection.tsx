@@ -1,7 +1,7 @@
 import { CardMedia, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { routes } from '../../App';
-import CustomButton from '../../Components/UI/CustomButton';
+import CustomButton from '../../Components/UI/RoutingButton';
 import { staticTextHome } from '../../data/staticText';
 
 const {
@@ -35,7 +35,15 @@ const HeaderSection = () => (
         {headerSectionTextP}
 
       </Typography>
-      <CustomButton to={routes.Contact}>Bli med!</CustomButton>
+      <CustomButton
+        to={routes.Contact}
+        sx={{
+          bgcolor: 'primary.light',
+        }}
+      >
+        Bli med!
+
+      </CustomButton>
     </Box>
     <CardMedia
       sx={{ height: 540, width: 504 }}
@@ -44,6 +52,7 @@ const HeaderSection = () => (
       src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6876623560589283328"
       allowFullScreen
       title="Embedded post"
+      frameBorder="none"
     />
   </Box>
 );

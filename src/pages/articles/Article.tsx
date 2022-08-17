@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { routes } from '../../App';
-import CustomButton from '../../Components/UI/CustomButton';
+import CustomButton from '../../Components/UI/RoutingButton';
 
 type props = {
   src: string
@@ -58,13 +58,11 @@ const Article = ({
       </Typography>
     </Box>
     <CustomButton
-      to={`${routes.Articles}/${id}`}
-      styles={{
-        marginBottom: '1rem',
-        background: '#f75842',
-        padding: '1rem 2rem',
-        borderRadius: '5%',
+      sx={{
+        bgcolor: 'warning.main',
+        mb: 4,
       }}
+      to={`${routes.Articles}/${id}`}
     >
       Les Mer
     </CustomButton>

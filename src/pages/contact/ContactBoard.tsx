@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import CustomIcon from '../../Components/UI/CustomIcon';
+import CustomIcon from '../../Components/UI/InteractiveIcon';
 
 const ContactBoard = () => (
   <Box

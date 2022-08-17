@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { routes } from '../../../App';
-import CustomIcon from '../../../Components/UI/CustomIcon';
+import CustomIcon from '../../../Components/UI/InteractiveIcon';
 
 type props = {
   src: string,
