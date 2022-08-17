@@ -10,6 +10,7 @@ const Video = ({ src }: props) => (
     src={src}
     allowFullScreen
     height={250}
+    frameBorder="none"
   />
 );
 

@@ -10,7 +10,6 @@ function CustomIcon({ href, iconType }: props) {
     <Link
       ml={2}
       color="#fff"
-      borderRadius="5%"
       fontSize={35}
       href={href}
       rel="noreferrer"

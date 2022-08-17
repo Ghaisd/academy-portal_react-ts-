@@ -34,7 +34,7 @@ const CategoriesSection = () => (
       <CustomButton to={routes.About}>Les mer</CustomButton>
       <CustomButton
         to={routes.AcademyTV}
-        styles={{ marginLeft: ' 1rem ' }}
+        styles={{ marginLeft: 16 }}
       >
         Academy TV
 

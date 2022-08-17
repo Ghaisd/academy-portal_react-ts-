@@ -72,7 +72,7 @@ const StudentPage = () => {
           <CustomIcon href={oneStudent?.GithubLink} iconType="bi bi-github" />
         </Box>
         <CustomButton
-          to="/#"
+          to="#"
           styles={{ backgroundColor: '#f75023', borderRadius: 20 }}
         >
           Last ned CV
@@ -80,7 +80,7 @@ const StudentPage = () => {
       </Box>
       <Box
         component="img"
-        borderRadius="30px"
+        borderRadius={20}
         alt="ProfilePic"
         src={oneStudent?.Image}
       />

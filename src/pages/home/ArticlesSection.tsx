@@ -4,11 +4,11 @@ import articles from '../../data/articles';
 import Article from '../articles/Article';
 
 const ArticlesSection = () => (
-  <>
+  <Box py={28}>
     <Typography
+      pb={8}
       variant="h3"
       align="center"
-      pt={32}
     >
       Artikler/Nyheter
 
@@ -29,7 +29,7 @@ const ArticlesSection = () => (
         />
       ))}
     </Box>
-  </>
+  </Box>
 );
 
 export default ArticlesSection;

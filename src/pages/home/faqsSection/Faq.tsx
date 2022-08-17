@@ -15,7 +15,7 @@ const Faq = ({ headerText, paragraphText }: props) => {
   const SetCssClasses = () => {
     if (faqIcon === 'bi bi-plus-square') {
       setFaqIcon('bi bi-dash-square');
-      setDisplayMode('d-inline-block');
+      setDisplayMode('inline-block');
     } else {
       setFaqIcon('bi bi-plus-square');
       setDisplayMode('none');
@@ -43,7 +43,14 @@ const Faq = ({ headerText, paragraphText }: props) => {
 
         </Typography>
       </Box>
-      <Typography pt={2} display={displayMode}>{paragraphText}</Typography>
+
+      <Typography
+        pt={2}
+        display={displayMode}
+      >
+        {paragraphText}
+
+      </Typography>
     </Box>
   );
 };

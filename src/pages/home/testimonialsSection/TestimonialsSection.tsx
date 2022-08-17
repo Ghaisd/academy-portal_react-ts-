@@ -1,8 +1,8 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
 import {
   Navigation, Pagination, Scrollbar, A11y, Virtual,
 } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Box } from '@mui/system';
+import { Container } from '@mui/system';
 import { Typography } from '@mui/material';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -12,8 +12,28 @@ import Testimonial from './Testimonial';
 
 const TestimonialsSection = () => (
   <>
-    <Typography variant="h3" align="center" pt={4}>Testimonials</Typography>
-    <Box className="container" pb={4}>
+    <Typography variant="h3" align="center" pt={8}>Testimonials</Typography>
+    <Container
+      maxWidth="lg"
+      sx={{
+        paddingBottom: 6,
+        '.swiper-pagination-bullet': {
+          borderRadius: 0.1,
+          opacity: 1,
+          bgcolor: '#909590',
+        },
+        '.swiper-pagination-bullet-active': {
+          bgcolor: '#00bf8e',
+        },
+        '.swiper-button-next,.swiper-button-prev': {
+          bgcolor: '#909590',
+          color: '#000',
+          p: 0.5,
+          pr: 1.3,
+        },
+      }}
+
+    >
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Virtual]}
         spaceBetween={50}
@@ -34,7 +54,7 @@ const TestimonialsSection = () => (
           </SwiperSlide>
         ))}
       </Swiper>
-    </Box>
+    </Container>
   </>
 );
 
