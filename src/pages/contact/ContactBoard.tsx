@@ -4,7 +4,7 @@ import CustomIcon from '../../Components/UI/CustomIcon';
 
 const ContactBoard = () => (
   <Box
-    bgcolor="#537a5a"
+    bgcolor="secondary.main"
     pl={15}
   >
     <Box
@@ -13,8 +13,8 @@ const ContactBoard = () => (
       alt="Contact"
       width="300px"
     />
-    <Typography borderBottom={1} variant="h4">Kontakt oss</Typography>
-    <Typography variant="h6">
+    <Typography borderBottom={1} color="textPrimary" variant="h4">Kontakt oss</Typography>
+    <Typography color="textPrimary" variant="h6">
       Kontakt oss for mer informasjon.
     </Typography>
     <CustomIcon

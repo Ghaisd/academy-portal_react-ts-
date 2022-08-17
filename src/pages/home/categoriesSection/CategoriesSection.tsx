@@ -16,16 +16,23 @@ const CategoriesSection = () => (
     display="grid"
     gridTemplateColumns="40% 60%"
     height={560}
-    bgcolor="#474a48"
+    bgcolor="primary.main"
     pt={12}
     pr={5}
     pl={24}
   >
     <Box mr={8}>
-      <Typography variant="h3">{categoriesSectionTextH}</Typography>
+      <Typography
+        color="textPrimary"
+        variant="h3"
+      >
+        {categoriesSectionTextH}
+
+      </Typography>
       <Typography
         mt={2}
         mb={6}
+        color="textPrimary"
         variant="h6"
       >
         {categoriesSectionTextP}

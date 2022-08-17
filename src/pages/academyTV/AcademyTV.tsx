@@ -3,7 +3,7 @@ import Video from './Video';
 import videos from '../../data/videos';
 
 const AcademyTV = () => (
-  <Box display="grid" gap={4} gridTemplateColumns="repeat(3, 1fr)" my={25.5}>
+  <Box display="grid" gap={4} gridTemplateColumns="repeat(3, 1fr)" py={30}>
     {videos.map((video) => (
       <Video key={video[0]} src={video} />
     ))}

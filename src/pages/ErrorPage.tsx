@@ -11,8 +11,15 @@ const ErrorPage = () => (
     justifyContent="center"
     alignItems="center"
   >
-    <Typography variant="h2" align="center">Oops! Page not found</Typography>
-    <Typography variant="h1" align="center">404</Typography>
+    <Typography
+      color="textPrimary"
+      variant="h2"
+      align="center"
+    >
+      Oops! Page not found
+
+    </Typography>
+    <Typography color="textPrimary" variant="h1" align="center">404</Typography>
     <Typography
       mb={2}
       align="center"
@@ -21,7 +28,6 @@ const ErrorPage = () => (
 
     </Typography>
     <CustomButton
-      styles={{ background: '#dc3545' }}
       to="/"
     >
       Go back home

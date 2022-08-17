@@ -5,7 +5,14 @@ import Student from './Student';
 
 const StudentsSection = () => (
   <>
-    <Typography align="center" variant="h2">Årets kull</Typography>
+    <Typography
+      align="center"
+      color="textPrimary"
+      variant="h3"
+    >
+      Årets kull
+
+    </Typography>
     <Box
       display="grid"
       gridTemplateColumns="repeat(4, 1fr)"

@@ -24,7 +24,7 @@ const Faq = ({ headerText, paragraphText }: props) => {
   return (
     <Box
       p={4}
-      bgcolor="#537a5a"
+      bgcolor="secondary.main"
       onClick={SetCssClasses}
       sx={{
         '&:hover': {
@@ -33,11 +33,18 @@ const Faq = ({ headerText, paragraphText }: props) => {
       }}
     >
       <Box>
-        <i className={faqIcon} />
+        <Typography
+          color="textPrimary"
+          variant="subtitle1"
+          display="inline-block"
+        >
+          <i className={faqIcon} />
+        </Typography>
         <Typography
           display="inline-block"
           ml={1}
           variant="h6"
+          color="textPrimary"
         >
           {headerText}
 
@@ -47,6 +54,8 @@ const Faq = ({ headerText, paragraphText }: props) => {
       <Typography
         pt={2}
         display={displayMode}
+        color="textPrimary"
+        variant="subtitle1"
       >
         {paragraphText}
 

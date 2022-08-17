@@ -19,8 +19,22 @@ const HeaderSection = () => (
     gap={10}
   >
     <Box>
-      <Typography variant="h3">{headerSectionTextH}</Typography>
-      <Typography variant="h6" mt={3} mb={2.8}>{headerSectionTextP}</Typography>
+      <Typography
+        color="textPrimary"
+        variant="h3"
+      >
+        {headerSectionTextH}
+
+      </Typography>
+      <Typography
+        color="textPrimary"
+        variant="h6"
+        mt={3}
+        mb={2.8}
+      >
+        {headerSectionTextP}
+
+      </Typography>
       <CustomButton to={routes.Contact}>Bli med!</CustomButton>
     </Box>
     <CardMedia

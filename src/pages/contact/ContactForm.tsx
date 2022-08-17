@@ -1,4 +1,6 @@
-import { Button, Input, TextField } from '@mui/material';
+import {
+  Button, Input, TextField, Typography,
+} from '@mui/material';
 import { Box } from '@mui/system';
 
 const ContactForm = () => (
@@ -10,7 +12,7 @@ const ContactForm = () => (
       '& > div >*,& >div >div>*': {
         width: 1,
         p: 2,
-        bgcolor: '#2c302e',
+        bgcolor: 'primary.dark',
         color: 'lightgray',
       },
     }}
@@ -51,7 +53,10 @@ const ContactForm = () => (
       variant="contained"
       color="success"
     >
-      sende melding
+      <Typography color="textPrimary" variant="subtitle1">
+
+        sende melding
+      </Typography>
     </Button>
   </Box>
 );
