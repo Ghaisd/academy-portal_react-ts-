@@ -4,7 +4,7 @@ import articles from '../../data/articles';
 import Article from '../articles/Article';
 
 const ArticlesSection = () => (
-  <Box py={28}>
+  <Box py={10}>
     <Typography
       pb={8}
       color="text.primary"
