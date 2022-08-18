@@ -3,13 +3,13 @@ const faqs = [
   {
     headerText: 'Hvem kan delta på Ikomm Academy?',
     paragraphText:
-      'Antallet deltagere varierer litt etter nivået på søkere, og hvor mange søkere vi har. Vi prøver å holde alle på omtrent samme kunnskapsnivå så langt det lar seg gjøre, så hvis vi har mange søkere på samme nivå, har vi flere deltagere. Forrige kurs (2022) hadde 7 deltagere.',
+      'Du kan delta på Ikomm Academy gjennom Nav. Snakk med din kontakt person fra Nav for mer info',
   },
 
   {
     headerText: 'Hvor mange deltagere er det?',
     paragraphText:
-      'Du trenger ingen forkunnskaper for å bli med på Ikomm Academy!  Når det er sagt, så har vi alltid en gjennomgang/testing av potensielle deltagere, og det er klart kurset vil være enklere for de som allerede kan litt, men alle kan lære!',
+      'Antallet deltagere varierer litt etter nivået på søkere, og hvor mange søkere vi har. Vi prøver å holde alle på omtrent samme kunnskapsnivå så langt det lar seg gjøre, så hvis vi har mange søkere på samme nivå, har vi flere deltagere. Forrige kurs (2022) hadde 7 deltagere.',
   },
 
   {
