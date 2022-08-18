@@ -13,7 +13,7 @@ import Testimonial from './Testimonial';
 const TestimonialsSection = () => (
   <>
     <Typography
-      color="textPrimary"
+      color="text.primary"
       variant="h3"
       align="center"
       pt={8}

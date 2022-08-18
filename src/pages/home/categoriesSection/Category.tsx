@@ -21,20 +21,20 @@ const Category = ({ categoryIcon, headerText, paragraphText } : props) => {
         borderRadius={4}
         width={18}
       >
-        <Typography color="textPrimary" variant="subtitle1">
+        <Typography color="text.primary" variant="subtitle1">
           <i className={cssIcon} />
         </Typography>
       </Box>
       <Typography
         mt={1}
-        color="textPrimary"
+        color="text.primary"
         variant="h6"
       >
         {headerText}
 
       </Typography>
       <Typography
-        color="textPrimary"
+        color="text.primary"
         variant="subtitle2"
         mt={1}
         mb={6}

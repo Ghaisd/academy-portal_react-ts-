@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import CustomButton from '../Components/UI/CustomButton';
+import CustomButton from '../Components/UI/RoutingButton';
 
 const ErrorPage = () => (
 
@@ -12,14 +12,14 @@ const ErrorPage = () => (
     alignItems="center"
   >
     <Typography
-      color="textPrimary"
+      color="text.primary"
       variant="h2"
       align="center"
     >
       Oops! Page not found
 
     </Typography>
-    <Typography color="textPrimary" variant="h1" align="center">404</Typography>
+    <Typography color="text.primary" variant="h1" align="center">404</Typography>
     <Typography
       mb={2}
       align="center"

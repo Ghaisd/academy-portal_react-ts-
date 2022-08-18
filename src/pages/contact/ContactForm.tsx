@@ -1,5 +1,5 @@
 import {
-  Button, Input, TextField, Typography,
+  Button, Input, TextField,
 } from '@mui/material';
 import { Box } from '@mui/system';
 
@@ -35,12 +35,16 @@ const ContactForm = () => (
         required
       />
     </Box>
-    <Box mb={2} mr={4}>
+    <Box>
       <Input
         type="email"
         placeholder="Din epostadresse"
         required
+        sx={{
+        }}
       />
+    </Box>
+    <Box pr={4}>
       <TextField
         multiline
         rows={7}
@@ -53,10 +57,7 @@ const ContactForm = () => (
       variant="contained"
       color="success"
     >
-      <Typography color="textPrimary" variant="subtitle1">
-
-        sende melding
-      </Typography>
+      sende melding
     </Button>
   </Box>
 );

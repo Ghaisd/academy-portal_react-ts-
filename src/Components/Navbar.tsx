@@ -1,7 +1,7 @@
 import {
   Typography, AppBar, Toolbar, Stack,
 } from '@mui/material';
-import CustomLink from './UI/CustomLink';
+import CustomLink from './UI/RoutingLink';
 import { routes } from '../App';
 import HideOnScroll from './UI/HideOnScroll';
 
@@ -10,7 +10,7 @@ const Navbar = () => (
     <AppBar position="fixed" sx={{ bgcolor: 'secondary.main' }}>
       <Toolbar>
         <Typography
-          color="textPrimary"
+          color="text.primary"
           variant="h5"
           component="div"
           sx={{ flexGrow: 1 }}

@@ -7,7 +7,7 @@ const ArticlesSection = () => (
   <Box py={28}>
     <Typography
       pb={8}
-      color="textPrimary"
+      color="text.primary"
       variant="h3"
       align="center"
     >

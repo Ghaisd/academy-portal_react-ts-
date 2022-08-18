@@ -2,8 +2,8 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Box } from '@mui/system';
 import { Typography } from '@mui/material';
-import CustomButton from '../../../Components/UI/CustomButton';
-import CustomIcon from '../../../Components/UI/CustomIcon';
+import CustomButton from '../../../Components/UI/RoutingButton';
+import CustomIcon from '../../../Components/UI/InteractiveIcon';
 import students from '../../../data/students';
 
 type StudentType = {
@@ -32,7 +32,7 @@ const StudentPage = () => {
 
   return (
     <Box
-      py={30}
+      py={40}
       display="flex"
       alignItems="center"
       justifyContent="center"
@@ -47,13 +47,13 @@ const StudentPage = () => {
 
         </Typography>
         <br />
-        <Typography color="textPrimary" variant="h2">
+        <Typography color="text.primary" variant="h2">
           {`${oneStudent?.Name} ${oneStudent?.LastName}`}
 
         </Typography>
         <br />
         <Typography
-          color="textPrimary"
+          color="text.primary"
           variant="h6"
         >
           Student at Ikomm Academy
@@ -73,8 +73,10 @@ const StudentPage = () => {
           <CustomIcon href={oneStudent?.GithubLink} iconType="bi bi-github" />
         </Box>
         <CustomButton
+          sx={{
+            bgcolor: 'warning.main',
+          }}
           to="#"
-          styles={{ backgroundColor: '#f75023', borderRadius: 20 }}
         >
           Last ned CV
         </CustomButton>
@@ -83,6 +85,7 @@ const StudentPage = () => {
         component="img"
         borderRadius={20}
         alt="ProfilePic"
+        width={400}
         src={oneStudent?.Image}
       />
     </Box>

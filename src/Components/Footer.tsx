@@ -1,8 +1,8 @@
 import { Box, Container } from '@mui/system';
 import Grid from '@mui/system/Unstable_Grid/Grid';
 import { Typography } from '@mui/material';
-import CustomLink from './UI/CustomLink';
-import CustomIcon from './UI/CustomIcon';
+import CustomLink from './UI/RoutingLink';
+import CustomIcon from './UI/InteractiveIcon';
 import { routes } from '../App';
 
 const Footer = () => (
@@ -12,7 +12,7 @@ const Footer = () => (
         <Grid>
           <Box mr={8}>
             <Typography
-              color="textPrimary"
+              color="text.primary"
               variant="h4"
               component="div"
               sx={{ flexGrow: 1 }}
@@ -21,7 +21,7 @@ const Footer = () => (
                 IKOMM ACADEMY
               </CustomLink>
             </Typography>
-            <Typography color="textPrimary" variant="subtitle1" pt={2}>
+            <Typography color="text.primary" variant="subtitle1" pt={2}>
               Talent finnes overalt for den som leter.
             </Typography>
             <Box
@@ -35,7 +35,7 @@ const Footer = () => (
         </Grid>
         <Grid ml={12}>
           <Typography
-            color="textPrimary"
+            color="text.primary"
             variant="h4"
             borderBottom={1}
             mb={1}
@@ -55,16 +55,16 @@ const Footer = () => (
           <Box display="flex" flexDirection="column" gap={2}>
 
             <Typography
-              color="textPrimary"
+              color="text.primary"
               variant="h4"
               borderBottom={1}
             >
               Kontaktinfo
 
             </Typography>
-            <Typography color="textPrimary" variant="h6">94970223</Typography>
+            <Typography color="text.primary" variant="h6">94970223</Typography>
             <Typography
-              color="textPrimary"
+              color="text.primary"
               variant="h6"
             >
               academy@ikomm.no
@@ -84,7 +84,7 @@ const Footer = () => (
         </Grid>
       </Grid>
       <Typography
-        color="textPrimary"
+        color="text.primary"
         variant="h6"
         textAlign="center"
         mt={4}

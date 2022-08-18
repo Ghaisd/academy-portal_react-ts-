@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { routes } from '../../../App';
-import CustomIcon from '../../../Components/UI/CustomIcon';
+import CustomIcon from '../../../Components/UI/InteractiveIcon';
 
 type props = {
   src: string,
@@ -33,7 +33,7 @@ const Student = ({
     <Box>
       <Typography
         pt={2}
-        color="textPrimary"
+        color="text.primary"
         variant="h4"
         align="center"
       >
@@ -41,7 +41,7 @@ const Student = ({
 
       </Typography>
       <Typography
-        color="#109"
+        color="info.main"
         pl={2}
         variant="h6"
       >

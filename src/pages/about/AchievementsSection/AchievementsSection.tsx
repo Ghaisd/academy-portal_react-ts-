@@ -15,8 +15,8 @@ const AchievementsSection = () => {
         src="/images/about_achievements.svg"
       />
       <Box>
-        <Typography color="textPrimary" variant="h3">Resultater</Typography>
-        <Typography color="textPrimary" variant="subtitle1" py={2}>
+        <Typography color="text.primary" variant="h3">Resultater</Typography>
+        <Typography color="text.primary" variant="subtitle1" py={2}>
           {achievementsSectionTextP}
         </Typography>
         <Box display="grid" gridTemplateColumns="repeat(2, 4fr)" gap={2.4}>
