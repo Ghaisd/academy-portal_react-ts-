@@ -11,14 +11,17 @@ const Faq = ({ headerText, paragraphText }: props) => {
   // eslint-disable-next-line max-len
   const [faqIcon, setFaqIcon] = useState('bi bi-plus-square');
   const [displayMode, setDisplayMode] = useState('none');
+  const [height, setHeight] = useState<number|string>(30);
 
   const SetCssClasses = () => {
     if (faqIcon === 'bi bi-plus-square') {
       setFaqIcon('bi bi-dash-square');
       setDisplayMode('inline-block');
+      setHeight('auto');
     } else {
       setFaqIcon('bi bi-plus-square');
       setDisplayMode('none');
+      setHeight(30);
     }
   };
   return (
@@ -26,30 +29,28 @@ const Faq = ({ headerText, paragraphText }: props) => {
       p={4}
       bgcolor="secondary.main"
       onClick={SetCssClasses}
+      display="inline-block"
+      height={height}
       sx={{
+        i: {
+          color: 'text.primary',
+        },
         '&:hover': {
           cursor: 'pointer',
         },
       }}
     >
-      <Box>
-        <Typography
-          color="text.primary"
-          variant="subtitle1"
-          display="inline-block"
-        >
-          <i className={faqIcon} />
-        </Typography>
-        <Typography
-          display="inline-block"
-          ml={1}
-          variant="h6"
-          color="text.primary"
-        >
-          {headerText}
+      <i className={faqIcon} />
+      <Typography
+        display="inline-block"
+        ml={1}
+        variant="h6"
+        color="text.primary"
 
-        </Typography>
-      </Box>
+      >
+        {headerText}
+
+      </Typography>
 
       <Typography
         pt={2}
