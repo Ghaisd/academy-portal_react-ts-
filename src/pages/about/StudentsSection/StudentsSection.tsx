@@ -7,7 +7,7 @@ const StudentsSection = () => (
   <>
     <Typography
       align="center"
-      color="textPrimary"
+      color="text.primary"
       variant="h3"
     >
       Årets kull

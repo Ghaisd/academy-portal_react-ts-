@@ -43,13 +43,13 @@ const Article = ({
       src={src}
     />
     <Box p="3rem">
-      <Typography color="textPrimary" variant="h5">{headline}</Typography>
-      <Typography color="textPrimary" variant="subtitle2">
+      <Typography color="text.primary" variant="h5">{headline}</Typography>
+      <Typography color="text.primary" variant="subtitle2">
         Skrevet av :
         {` ${author}`}
       </Typography>
       <Typography
-        color="textPrimary"
+        color="text.primary"
         variant="subtitle1"
         mt={1.2}
       >

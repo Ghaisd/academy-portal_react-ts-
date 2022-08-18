@@ -12,21 +12,19 @@ type props = {
   children: string
 }
 
-function CustomButton({
+const CustomButton = ({
   to, sx, color, children,
-}: props) {
-  return (
-    <Button
-      component={Link}
-      to={to}
-      color={color}
-      variant="contained"
-      size="medium"
-      sx={sx}
-    >
-      {children}
-    </Button>
-  );
-}
+}: props) => (
+  <Button
+    component={Link}
+    to={to}
+    color={color}
+    variant="contained"
+    size="medium"
+    sx={sx}
+  >
+    {children}
+  </Button>
+);
 
 export default CustomButton;

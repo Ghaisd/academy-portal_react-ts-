@@ -34,7 +34,7 @@ const Faq = ({ headerText, paragraphText }: props) => {
     >
       <Box>
         <Typography
-          color="textPrimary"
+          color="text.primary"
           variant="subtitle1"
           display="inline-block"
         >
@@ -44,7 +44,7 @@ const Faq = ({ headerText, paragraphText }: props) => {
           display="inline-block"
           ml={1}
           variant="h6"
-          color="textPrimary"
+          color="text.primary"
         >
           {headerText}
 
@@ -54,7 +54,7 @@ const Faq = ({ headerText, paragraphText }: props) => {
       <Typography
         pt={2}
         display={displayMode}
-        color="textPrimary"
+        color="text.primary"
         variant="subtitle1"
       >
         {paragraphText}

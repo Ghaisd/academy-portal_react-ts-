@@ -23,7 +23,7 @@ const CategoriesSection = () => (
   >
     <Box mr={8}>
       <Typography
-        color="textPrimary"
+        color="text.primary"
         variant="h3"
       >
         {categoriesSectionTextH}
@@ -32,7 +32,7 @@ const CategoriesSection = () => (
       <Typography
         mt={2}
         mb={6}
-        color="textPrimary"
+        color="text.primary"
         variant="h6"
       >
         {categoriesSectionTextP}

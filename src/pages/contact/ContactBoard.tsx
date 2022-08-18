@@ -13,8 +13,8 @@ const ContactBoard = () => (
       alt="Contact"
       width="300px"
     />
-    <Typography borderBottom={1} color="textPrimary" variant="h4">Kontakt oss</Typography>
-    <Typography color="textPrimary" variant="h6">
+    <Typography borderBottom={1} color="text.primary" variant="h4">Kontakt oss</Typography>
+    <Typography color="text.primary" variant="h6">
       Kontakt oss for mer informasjon.
     </Typography>
     <CustomIcon

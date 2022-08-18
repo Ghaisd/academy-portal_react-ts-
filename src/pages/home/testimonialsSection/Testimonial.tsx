@@ -19,9 +19,9 @@ const Testimonial = ({
     />
 
     <Box textAlign="center">
-      <Typography color="textPrimary" variant="h6">{name}</Typography>
+      <Typography color="text.primary" variant="h6">{name}</Typography>
       <Typography
-        color="textPrimary"
+        color="text.primary"
         variant="subtitle1"
         fontSize={12}
         pt={1}
@@ -32,7 +32,7 @@ const Testimonial = ({
       </Typography>
     </Box>
     <Box bgcolor="secondary.main" p={4} borderRadius={5}>
-      <Typography color="textPrimary" variant="subtitle2">
+      <Typography color="text.primary" variant="subtitle2">
         {paragraphText}
       </Typography>
     </Box>

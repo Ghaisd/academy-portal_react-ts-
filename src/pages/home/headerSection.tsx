@@ -20,14 +20,14 @@ const HeaderSection = () => (
   >
     <Box>
       <Typography
-        color="textPrimary"
+        color="text.primary"
         variant="h3"
       >
         {headerSectionTextH}
 
       </Typography>
       <Typography
-        color="textPrimary"
+        color="text.primary"
         variant="h6"
         mt={3}
         mb={2.8}

@@ -40,7 +40,7 @@ const ArticlePage = () => {
         src={article?.ImageLInk}
       />
 
-      <Typography color="textPrimary" variant="h3" textAlign="center">
+      <Typography color="text.primary" variant="h3" textAlign="center">
         {article?.Title}
       </Typography>
 
@@ -53,7 +53,7 @@ const ArticlePage = () => {
         />
         <Box ml={2} textTransform="uppercase">
           <Typography
-            color="textPrimary"
+            color="text.primary"
             variant="h5"
             py={2}
           >
@@ -61,7 +61,7 @@ const ArticlePage = () => {
 
           </Typography>
           <Typography
-            color="textPrimary"
+            color="text.primary"
             variant="subtitle2"
           >
             May 18, 2022
@@ -71,7 +71,7 @@ const ArticlePage = () => {
       </Box>
 
       <Typography
-        color="textPrimary"
+        color="text.primary"
         variant="h5"
         mb={12}
         mx="auto"

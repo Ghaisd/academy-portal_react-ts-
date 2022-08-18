@@ -25,12 +25,12 @@ const Achievement = ({ iconAchievement, nrOfAchievement, finishedAchievement }: 
       },
     }}
   >
-    <Typography variant="subtitle1" color="textPrimary">
+    <Typography variant="subtitle1" color="text.primary">
       <i className={iconAchievement} />
     </Typography>
-    <Typography color="textPrimary" variant="h4">{nrOfAchievement}</Typography>
+    <Typography color="text.primary" variant="h4">{nrOfAchievement}</Typography>
     <Typography
-      color="textPrimary"
+      color="text.primary"
       variant="h5"
     >
       {finishedAchievement}

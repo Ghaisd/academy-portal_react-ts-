@@ -11,7 +11,7 @@ const FaqsSection = () => (
       }}
     >
       <Typography
-        color="textPrimary"
+        color="text.primary"
         variant="h3"
         align="center"
         my={8}
