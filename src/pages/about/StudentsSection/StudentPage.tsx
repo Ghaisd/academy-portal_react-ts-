@@ -36,7 +36,7 @@ const StudentPage = () => {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      gap={24}
+      gap={14}
     >
       <Box>
         <Typography

@@ -5,11 +5,7 @@ import Faq from './Faq';
 
 const FaqsSection = () => (
   <Box bgcolor="primary.main" py={2}>
-    <Container
-      sx={{
-        mt: 10,
-      }}
-    >
+    <Container>
       <Typography
         color="text.primary"
         variant="h3"
