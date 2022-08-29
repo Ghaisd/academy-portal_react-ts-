@@ -3,18 +3,7 @@ import { useState, useEffect } from 'react';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import useArticles from '../../api/hooks/useArticles';
-
-type ArticleType = {
-  Id: number;
-  AuthorId: number;
-  AuthorName: string;
-  AuthorImage: string;
-  Title: string;
-  Content: string;
-  ArticleImage: string;
-  CanPublish: boolean;
-  IsPublished: boolean;
-};
+import { ArticleType } from '../../api/api';
 
 const ArticlePage = () => {
   const { id } = useParams<string>();
@@ -22,10 +11,12 @@ const ArticlePage = () => {
 
   const { data, error } = useArticles();
 
-  const articles: ArticleType[] = data;
+  const articles = data;
   useEffect(() => {
     if (articles) {
-      const individualArticle = articles.find((x) => x.Id.toString() === id);
+      const individualArticle: ArticleType | undefined = articles.find(
+        (x) => x.Id.toString() === id,
+      );
       if (individualArticle) {
         setArticle(individualArticle);
       }

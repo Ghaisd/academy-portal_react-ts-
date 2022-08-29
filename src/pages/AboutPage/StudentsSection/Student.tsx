@@ -7,10 +7,10 @@ type props = {
   Name: string;
   src: string;
   smallInfo: string;
-  GithubLink: string;
-  LinkedinLink: string;
+  Github: string;
+  Linkedin: string;
 };
-const Student = ({ src, Name, smallInfo, GithubLink, LinkedinLink }: props) => (
+const Student = ({ src, Name, smallInfo, Github, Linkedin }: props) => (
   <Box border={10} borderColor='secondary.main' bgcolor='primary.light' mr={14}>
     <Box display='flex' alignItems='center'>
       <Box component='img' src={src} alt='Student' height='300px' />
@@ -19,8 +19,8 @@ const Student = ({ src, Name, smallInfo, GithubLink, LinkedinLink }: props) => (
           href={`${routes.About}/${Name}`}
           iconType='bi bi-file-earmark-person'
         />
-        <CustomIcon href={LinkedinLink} iconType='bi bi-linkedin' />
-        <CustomIcon href={GithubLink} iconType='bi bi-github' />
+        <CustomIcon href={Linkedin} iconType='bi bi-linkedin' />
+        <CustomIcon href={Github} iconType='bi bi-github' />
       </Box>
     </Box>
     <Box>

@@ -1,6 +1,6 @@
 import { Box } from '@mui/system';
+import { ArticleType } from '../../api/api';
 import useArticles from '../../api/hooks/useArticles';
-import { ArticleType } from '../HomePage/ArticlesSection';
 import Article from './Article';
 
 const ArticlesPage = () => {

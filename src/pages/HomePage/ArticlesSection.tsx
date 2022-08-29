@@ -1,19 +1,11 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import useSWR from 'swr';
+import { ArticleType } from '../../api/api';
+import useArticles from '../../api/hooks/useArticles';
 import Article from '../ArticlesPage/Article';
 
-export type ArticleType = {
-  Id: number;
-  Title: string;
-  AuthorName: string;
-  Content: string;
-  ArticleImage: string;
-};
 const ArticlesSection = () => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const fetcher = (url: string) => fetch(url).then((r: any) => r.json());
-  const { data, error } = useSWR('https://localhost:7045/api/article', fetcher);
+  const { data, error } = useArticles();
   if (error) return <h1>{error}</h1>;
   return (
     <Box py={10}>

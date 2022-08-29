@@ -1,8 +1,11 @@
 import useSWR from 'swr';
-import { articlesUrl, fetcher } from '../api';
+import { articlesUrl, ArticleType, fetcher } from '../api';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const useArticles = (): any => {
+type Articles = {
+  data: ArticleType[]
+  error: string;
+}
+const useArticles = (): Articles => {
   const url = articlesUrl;
   const { data, error } = useSWR(
     url,
