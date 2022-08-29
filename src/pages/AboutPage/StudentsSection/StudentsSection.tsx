@@ -1,19 +1,11 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
+import { StudentType } from '../../../api/api';
 import useStudents from '../../../api/hooks/useStudents';
 import Student from './Student';
 
-type StudentType = {
-  Name: string;
-  ProfileImage: string;
-  ShortInfo: string;
-  Github: string;
-  Linkedin: string;
-};
-
 const StudentsSection = () => {
   const { data, error } = useStudents();
-
   if (error) return <h1>{error}</h1>;
   return (
     <>
@@ -34,8 +26,8 @@ const StudentsSection = () => {
               src={student.ProfileImage}
               Name={student.Name}
               smallInfo={student.ShortInfo}
-              GithubLink={student.Github}
-              LinkedinLink={student.Linkedin}
+              Github={student.Github}
+              Linkedin={student.Linkedin}
             />
           ))
         ) : (

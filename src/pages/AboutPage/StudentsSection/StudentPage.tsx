@@ -5,28 +5,20 @@ import { Typography } from '@mui/material';
 import CustomButton from '../../../Components/UI/RoutingButton';
 import CustomIcon from '../../../Components/UI/InteractiveIcon';
 import useStudents from '../../../api/hooks/useStudents';
+import { StudentType } from '../../../api/api';
 
-type StudentType = {
-  Id: number;
-  Name: string;
-  LastName: string;
-  ShortInfo: string;
-  Status: string;
-  Image: string;
-  Github: string;
-  Linkedin: string;
-  ProfileImage: string;
-};
 const StudentPage = () => {
   const { id } = useParams<string>();
   const [student, setStudent] = useState<StudentType>();
 
   const { data, error } = useStudents();
 
-  const students: StudentType[] = data;
+  const students = data;
   useEffect(() => {
     if (students) {
-      const individualStudent = students.find((x) => x.Name.toString() === id);
+      const individualStudent: StudentType | undefined = students.find(
+        (x) => x.Name === id,
+      );
       if (individualStudent) {
         setStudent(individualStudent);
       }
