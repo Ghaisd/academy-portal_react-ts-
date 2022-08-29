@@ -2,9 +2,9 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Box } from '@mui/system';
 import { Typography } from '@mui/material';
-import useSWR from 'swr';
 import CustomButton from '../../../Components/UI/RoutingButton';
 import CustomIcon from '../../../Components/UI/InteractiveIcon';
+import useStudents from '../../../api/hooks/useStudents';
 
 type StudentType = {
   Id: number;
@@ -21,12 +21,7 @@ const StudentPage = () => {
   const { id } = useParams<string>();
   const [student, setStudent] = useState<StudentType>();
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const fetcher = (url: string) => fetch(url).then((r: any) => r.json());
-  const { data, error } = useSWR(
-    'https://localhost:7045/api/allstudents',
-    fetcher,
-  );
+  const { data, error } = useStudents();
 
   const students: StudentType[] = data;
   useEffect(() => {

@@ -1,7 +1,6 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import useSWR from 'swr';
-// import students from '../../../data/students';
+import useStudents from '../../../api/hooks/useStudents';
 import Student from './Student';
 
 type StudentType = {
@@ -13,12 +12,8 @@ type StudentType = {
 };
 
 const StudentsSection = () => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const fetcher = (url: string) => fetch(url).then((r: any) => r.json());
-  const { data, error } = useSWR(
-    'https://localhost:7045/api/allstudents',
-    fetcher,
-  );
+  const { data, error } = useStudents();
+
   if (error) return <h1>{error}</h1>;
   return (
     <>

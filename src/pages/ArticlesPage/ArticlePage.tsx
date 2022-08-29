@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import useSWR from 'swr';
+import useArticles from '../../api/hooks/useArticles';
 
 type ArticleType = {
   Id: number;
@@ -20,9 +20,7 @@ const ArticlePage = () => {
   const { id } = useParams<string>();
   const [article, setArticle] = useState<ArticleType>();
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const fetcher = (url: string) => fetch(url).then((r: any) => r.json());
-  const { data, error } = useSWR('https://localhost:7045/api/article', fetcher);
+  const { data, error } = useArticles();
 
   const articles: ArticleType[] = data;
   useEffect(() => {

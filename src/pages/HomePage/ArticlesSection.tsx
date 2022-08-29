@@ -1,8 +1,6 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import useSWR from 'swr';
-// eslint-disable-next-line import/no-unresolved
-// import articles from '../../data/articles';
 import Article from '../ArticlesPage/Article';
 
 export type ArticleType = {
