@@ -46,12 +46,6 @@
         "@typescript-eslint/no-shadow": [
             "error"
         ],
-        "max-len": [
-            "warn",
-            {
-                "code": 80
-            }
-        ],
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "import/prefer-default-export": "off",
@@ -71,7 +65,9 @@
         ],
         "@typescript-eslint/explicit-function-return-type": "off",
         "linebreak-style": 0,
-        "react/jsx-props-no-spreading": "off"
+        "react/jsx-props-no-spreading": "off",
+             "jsx-quotes": [2, "prefer-single"],
+             "object-curly-newline": "off"
         /****************************************/
     },
     "settings": {

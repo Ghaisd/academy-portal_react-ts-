@@ -1,12 +1,10 @@
 import { Link } from '@mui/material';
-import {
-  Link as RouterLink,
-} from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
 
 type props = {
-  to: string
-  children: string
-}
+  to: string;
+  children: string;
+};
 
 const CustomLink = ({ to, children, ...props }: props) => (
   <Link

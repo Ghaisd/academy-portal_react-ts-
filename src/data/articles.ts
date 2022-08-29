@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 const articles = [
   {
-    id: '1',
+    id: 1,
     AuthorId: 97846,
     AuthorName: 'Ghais',
     AuthorImageLink: '/images/Ghais.jpg',
@@ -13,7 +13,7 @@ const articles = [
     IsPublished: true,
   },
   {
-    id: '2',
+    id: 2,
     AuthorId: 55969,
     AuthorName: 'Tor',
     AuthorImageLink: '/images/Tor.png',
@@ -25,7 +25,7 @@ const articles = [
     IsPublished: true,
   },
   {
-    id: '3',
+    id: 3,
     AuthorId: 33466,
     AuthorName: 'Argyro',
     AuthorImageLink: '/images/iro.png',
@@ -37,7 +37,7 @@ const articles = [
     IsPublished: true,
   },
   {
-    id: '4',
+    id: 4,
     AuthorId: 36824,
     AuthorName: 'Aksel',
     AuthorImageLink: '/images/Aksel.jpg',
@@ -49,7 +49,7 @@ const articles = [
     IsPublished: true,
   },
   {
-    id: '5',
+    id: 5,
     AuthorId: 36824,
     AuthorName: 'Aksel',
     AuthorImageLink: '/images/Aksel.jpg',
@@ -61,7 +61,7 @@ const articles = [
     IsPublished: true,
   },
   {
-    id: '6',
+    id: 6,
     AuthorId: 67645,
     AuthorName: 'Kristian',
     AuthorImageLink: '/images/Avatar2.png',

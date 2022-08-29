@@ -1,17 +1,17 @@
 import { Link } from '@mui/material';
 
 type props = {
-  href: string | undefined,
-  iconType: string
-}
+  href: string | undefined;
+  iconType: string;
+};
 
 const CustomIcon = ({ href, iconType }: props) => (
   <Link
     ml={2}
-    color="text.primary"
+    color='text.primary'
     fontSize={35}
     href={href}
-    rel="noreferrer"
+    rel='noreferrer'
     sx={{
       '&:hover': {
         color: 'primary.light',
