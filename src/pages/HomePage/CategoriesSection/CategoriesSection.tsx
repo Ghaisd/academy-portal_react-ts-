@@ -8,7 +8,8 @@ import Category from './Category';
 
 const { categoriesSectionTextH, categoriesSectionTextP } = staticTextHome;
 
-const CategoriesSection = () => (
+const CategoriesSection = () => {
+  (
   <Box
     display='grid'
     gridTemplateColumns='40% 60%'
