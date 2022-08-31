@@ -14,10 +14,10 @@ const ContactBoard = () => {
         width='300px'
       />
       <Typography borderBottom={1} color='text.primary' variant='h4'>
-        {t('Kontakt oss')}
+        {t('Contact')}
       </Typography>
       <Typography color='text.primary' variant='h6'>
-        {t('Kontakt oss for mer informasjon.')}
+        {t('ContactUsForMoreInfo')}
       </Typography>
       <CustomIcon
         href='https://www.facebook.com/ikommas/'

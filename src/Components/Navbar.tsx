@@ -21,11 +21,11 @@ const Navbar = () => {
             <LanguageMenu />
           </Typography>
           <Stack direction='row' spacing={7}>
-            <CustomLink to={routes.Home}>{t('Hjem')}</CustomLink>
-            <CustomLink to={routes.Articles}>{t('Siste nytt')}</CustomLink>
-            <CustomLink to={routes.About}>{t('Kandidatene')}</CustomLink>
-            <CustomLink to={routes.AcademyTV}>{t('Akademi TV')}</CustomLink>
-            <CustomLink to={routes.Contact}>{t('Kontaktinfo')}</CustomLink>
+            <CustomLink to={routes.Home}>{t('Home')}</CustomLink>
+            <CustomLink to={routes.Articles}>{t('Articles')}</CustomLink>
+            <CustomLink to={routes.About}>{t('Participants')}</CustomLink>
+            <CustomLink to={routes.AcademyTV}>{t('AcademyTV')}</CustomLink>
+            <CustomLink to={routes.Contact}>{t('Contact')}</CustomLink>
           </Stack>
         </Toolbar>
       </AppBar>

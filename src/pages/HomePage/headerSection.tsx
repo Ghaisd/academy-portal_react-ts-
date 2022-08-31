@@ -31,7 +31,7 @@ const HeaderSection = () => {
             bgcolor: 'primary.light',
           }}
         >
-          {t('Bli med!')}
+          {t('JoinUs')}
         </CustomButton>
       </Box>
       <CardMedia

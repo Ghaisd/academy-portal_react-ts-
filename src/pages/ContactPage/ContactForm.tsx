@@ -21,27 +21,22 @@ const ContactForm = () => {
       <Box display='flex' justifyContent='center'>
         <Input
           type='text'
-          placeholder={t('Fornavn')}
+          placeholder={t('FirstName')}
           required
           sx={{
             borderRight: 1,
           }}
         />
-        <Input type='text' placeholder={t('Etternavn')} required />
+        <Input type='text' placeholder={t('LastName')} required />
       </Box>
       <Box>
-        <Input
-          type='email'
-          placeholder={t('Din epostadresse')}
-          required
-          sx={{}}
-        />
+        <Input type='email' placeholder={t('Email')} required />
       </Box>
       <Box pr={4}>
-        <TextField multiline rows={7} placeholder={t('Beskjed')} required />
+        <TextField multiline rows={7} placeholder={t('Message')} required />
       </Box>
       <Button type='submit' variant='contained' color='success'>
-        {t('sende melding')}
+        {t('SendMessage')}
       </Button>
     </Box>
   );
