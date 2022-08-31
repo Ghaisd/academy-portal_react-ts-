@@ -1,12 +1,13 @@
 import { Box, Container } from '@mui/system';
 import { Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 import { staticTextAbout } from '../../../data/staticText';
 import achievements from '../../../data/achievements';
 import Achievement from './Achievement';
 
 const AchievementsSection = () => {
   const { achievementsSectionTextP } = staticTextAbout;
-
+  const { t } = useTranslation();
   return (
     <Container maxWidth='xl'>
       <Box display='flex'>
@@ -17,7 +18,7 @@ const AchievementsSection = () => {
         />
         <Box>
           <Typography color='text.primary' variant='h3'>
-            Resultater
+            {t('Achievements')}
           </Typography>
           <Typography color='text.primary' variant='subtitle1' py={2}>
             {achievementsSectionTextP}

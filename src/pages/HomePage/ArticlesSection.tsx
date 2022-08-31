@@ -1,16 +1,18 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
+import { useTranslation } from 'react-i18next';
 import { ArticleType } from '../../api/api';
 import useArticles from '../../api/hooks/useArticles';
 import Article from '../ArticlesPage/Article';
 
 const ArticlesSection = () => {
   const { data, error } = useArticles();
+  const { t } = useTranslation();
   if (error) return <h1>{error}</h1>;
   return (
     <Box py={10}>
       <Typography pb={8} color='text.primary' variant='h3' align='center'>
-        Artikler/Nyheter
+        {t('Articles_News')}
       </Typography>
       <Box
         justifyItems='center'

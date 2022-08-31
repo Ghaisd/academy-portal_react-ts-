@@ -1,16 +1,18 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
+import { useTranslation } from 'react-i18next';
 import { StudentType } from '../../../api/api';
 import useStudents from '../../../api/hooks/useStudents';
 import Student from './Student';
 
 const StudentsSection = () => {
   const { data, error } = useStudents();
+  const { t } = useTranslation();
   if (error) return <h1>{error}</h1>;
   return (
     <>
       <Typography align='center' color='text.primary' variant='h3'>
-        Årets kull
+        {t('OurStudents')}
       </Typography>
       <Box
         display='grid'
