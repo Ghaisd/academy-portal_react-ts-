@@ -16,7 +16,7 @@ const ErrorPage = () => (
     <Typography color='text.primary' variant='h1' align='center'>
       404
     </Typography>
-    <Typography mb={2} align='center'>
+    <Typography variant='body1' mb={2} align='center'>
       We can&apos;t find the page you&apos;re looking for.
     </Typography>
     <CustomButton to='/'>Go back home</CustomButton>

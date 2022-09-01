@@ -26,6 +26,9 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: ['Lemonada', 'cursive'].join(','),
+    body1: {
+      color: '#fff',
+    },
   },
 });
 
