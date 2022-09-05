@@ -3,12 +3,14 @@ import { Box } from '@mui/system';
 import { useTranslation } from 'react-i18next';
 import { routes } from '../../App';
 import CustomButton from '../../Components/UI/RoutingButton';
-import { staticTextHome } from '../../data/staticText';
+import { staticTextHomeNo, staticTextHomeEn } from '../../data/staticText';
 
-const { headerSectionTextH, headerSectionTextP } = staticTextHome;
+const { headerSectionTextHNo, headerSectionTextPNo } = staticTextHomeNo;
+const { headerSectionTextHEn, headerSectionTextPEn } = staticTextHomeEn;
 
 const HeaderSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
   return (
     <Box
       height={800}
@@ -20,10 +22,10 @@ const HeaderSection = () => {
     >
       <Box>
         <Typography color='text.primary' variant='h3'>
-          {headerSectionTextH}
+          {lang === 'no' ? headerSectionTextHNo : headerSectionTextHEn}
         </Typography>
         <Typography color='text.primary' variant='h6' mt={3} mb={2.8}>
-          {headerSectionTextP}
+          {lang === 'no' ? headerSectionTextPNo : headerSectionTextPEn}
         </Typography>
         <CustomButton
           to={routes.Contact}

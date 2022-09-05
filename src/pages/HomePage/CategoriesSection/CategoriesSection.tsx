@@ -4,10 +4,13 @@ import { useTranslation } from 'react-i18next';
 import { routes } from '../../../App';
 import CustomButton from '../../../Components/UI/RoutingButton';
 import categories from '../../../data/categories';
-import { staticTextHome } from '../../../data/staticText';
+import { staticTextHomeNo } from '../../../data/staticText';
 import Category from './Category';
 
-const { categoriesSectionTextH, categoriesSectionTextP } = staticTextHome;
+const {
+  categoriesSectionTextHNo: categoriesSectionTextH,
+  categoriesSectionTextPNo: categoriesSectionTextP,
+} = staticTextHomeNo;
 
 const CategoriesSection = () => {
   const { t } = useTranslation();
