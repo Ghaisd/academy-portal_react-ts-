@@ -1,7 +1,8 @@
-import { CardMedia, Typography } from '@mui/material';
+import { CardMedia } from '@mui/material';
 import { Box } from '@mui/system';
 import { useTranslation } from 'react-i18next';
 import { routes } from '../../App';
+import Text from '../../Components/Text';
 import CustomButton from '../../Components/UI/RoutingButton';
 import { staticTextHomeNo, staticTextHomeEn } from '../../data/staticText';
 
@@ -9,8 +10,7 @@ const { headerSectionTextHNo, headerSectionTextPNo } = staticTextHomeNo;
 const { headerSectionTextHEn, headerSectionTextPEn } = staticTextHomeEn;
 
 const HeaderSection = () => {
-  const { t, i18n } = useTranslation();
-  const lang = i18n.language;
+  const { t } = useTranslation();
   return (
     <Box
       height={800}
@@ -21,12 +21,17 @@ const HeaderSection = () => {
       gap={10}
     >
       <Box>
-        <Typography color='text.primary' variant='h3'>
-          {lang === 'no' ? headerSectionTextHNo : headerSectionTextHEn}
-        </Typography>
-        <Typography color='text.primary' variant='h6' mt={3} mb={2.8}>
-          {lang === 'no' ? headerSectionTextPNo : headerSectionTextPEn}
-        </Typography>
+        <Text
+          textNo={headerSectionTextHNo}
+          textEn={headerSectionTextHEn}
+          variant='h3'
+        />
+        <Text
+          textNo={headerSectionTextPNo}
+          textEn={headerSectionTextPEn}
+          variant='h6'
+          sx={{ mt: 3, mb: 2.8 }}
+        />
         <CustomButton
           to={routes.Contact}
           sx={{
