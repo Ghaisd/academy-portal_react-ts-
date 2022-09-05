@@ -2,7 +2,7 @@ import { Box, Container } from '@mui/system';
 import Grid from '@mui/system/Unstable_Grid/Grid';
 import { Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import CustomLink from './UI/RoutingLink';
+import RoutingLink from './UI/RoutingLink';
 import CustomIcon from './UI/InteractiveIcon';
 import { routes } from '../App';
 
@@ -20,7 +20,7 @@ const Footer = () => {
                 component='div'
                 sx={{ flexGrow: 1 }}
               >
-                <CustomLink to='/'>IKOMM ACADEMY</CustomLink>
+                <RoutingLink to='/'>IKOMM ACADEMY</RoutingLink>
               </Typography>
               <Typography color='text.primary' variant='subtitle1' pt={2}>
                 Talent finnes overalt for den som leter.
@@ -44,11 +44,11 @@ const Footer = () => {
               {t('QuickLinks')}
             </Typography>
             <Box display='flex' flexDirection='column' gap={1}>
-              <CustomLink to={routes.Home}>{t('Home')}</CustomLink>
-              <CustomLink to={routes.Articles}>{t('Articles')}</CustomLink>
-              <CustomLink to={routes.About}>{t('Participants')}</CustomLink>
-              <CustomLink to={routes.AcademyTV}>{t('AcademyTV')}</CustomLink>
-              <CustomLink to={routes.Contact}>{t('Contact')}</CustomLink>
+              <RoutingLink to={routes.Home}>{t('Home')}</RoutingLink>
+              <RoutingLink to={routes.Articles}>{t('Articles')}</RoutingLink>
+              <RoutingLink to={routes.About}>{t('Participants')}</RoutingLink>
+              <RoutingLink to={routes.AcademyTV}>{t('AcademyTV')}</RoutingLink>
+              <RoutingLink to={routes.Contact}>{t('Contact')}</RoutingLink>
             </Box>
           </Grid>
           <Grid ml={24}>

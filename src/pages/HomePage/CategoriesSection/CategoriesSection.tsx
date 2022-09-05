@@ -2,7 +2,7 @@ import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import { useTranslation } from 'react-i18next';
 import { routes } from '../../../App';
-import CustomButton from '../../../Components/UI/RoutingButton';
+import RoutingButton from '../../../Components/UI/RoutingButton';
 import categories from '../../../data/categories';
 import { staticTextHomeNo } from '../../../data/staticText';
 import Category from './Category';
@@ -31,15 +31,15 @@ const CategoriesSection = () => {
         <Typography mt={2} mb={6} color='text.primary' variant='h6'>
           {categoriesSectionTextP}
         </Typography>
-        <CustomButton
+        <RoutingButton
           sx={{
             bgcolor: 'primary.light',
           }}
           to={routes.About}
         >
           {t('ReadMore')}
-        </CustomButton>
-        <CustomButton
+        </RoutingButton>
+        <RoutingButton
           to={routes.AcademyTV}
           sx={{
             bgcolor: 'primary.light',
@@ -47,7 +47,7 @@ const CategoriesSection = () => {
           }}
         >
           {t('AcademyTV')}
-        </CustomButton>
+        </RoutingButton>
       </Box>
 
       <Box display='grid' gridTemplateColumns='repeat(2, 1fr)' gap={2.4}>

@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Box } from '@mui/system';
 import { Typography } from '@mui/material';
-import CustomButton from '../../../Components/UI/RoutingButton';
+import RoutingButton from '../../../Components/UI/RoutingButton';
 import CustomIcon from '../../../Components/UI/InteractiveIcon';
 import useStudents from '../../../api/hooks/useStudents';
 import { StudentType } from '../../../api/api';
@@ -65,14 +65,14 @@ const StudentPage = () => {
           <CustomIcon href='https://linkedin.com' iconType='bi bi-linkedin' />
           <CustomIcon href={student?.Github} iconType='bi bi-github' />
         </Box>
-        <CustomButton
+        <RoutingButton
           sx={{
             bgcolor: 'warning.main',
           }}
           to='#'
         >
           Last ned CV
-        </CustomButton>
+        </RoutingButton>
       </Box>
       <Box
         component='img'

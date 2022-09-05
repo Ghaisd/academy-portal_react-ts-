@@ -3,7 +3,7 @@ import { Box } from '@mui/system';
 import { useTranslation } from 'react-i18next';
 import { routes } from '../../App';
 import Text from '../../Components/Text';
-import CustomButton from '../../Components/UI/RoutingButton';
+import RoutingButton from '../../Components/UI/RoutingButton';
 import { staticTextHomeNo, staticTextHomeEn } from '../../data/staticText';
 
 const { headerSectionTextHNo, headerSectionTextPNo } = staticTextHomeNo;
@@ -30,21 +30,21 @@ const HeaderSection = () => {
           textNo={headerSectionTextPNo}
           textEn={headerSectionTextPEn}
           variant='h6'
-          sx={{ mt: 3, mb: 2.8 }}
+          display='flex'
+          my={3}
         />
-        <CustomButton
+        <RoutingButton
           to={routes.Contact}
           sx={{
             bgcolor: 'primary.light',
           }}
         >
           {t('JoinUs')}
-        </CustomButton>
+        </RoutingButton>
       </Box>
       <CardMedia
         sx={{ height: 540, width: 504 }}
         component='iframe'
-        // eslint-disable-next-line max-len
         src='https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6876623560589283328'
         allowFullScreen
         title='Embedded post'

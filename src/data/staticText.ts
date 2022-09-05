@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 export const staticTextHomeNo = {
   headerSectionTextHNo:
-    ' Det handler om å gi flinke folk en sjanse, og å finne flinke folksom tar den.',
+    ' Det handler om å gi flinke folk en sjanse, og å finne flinke folk som tar den.',
   headerSectionTextPNo: `Med Ikomm Academy har Ikomm i tett samarbeid med NAV Lillehammer
     bevist at det fortsatt finnes ekte vinn-vinn-situasjoner. Kort
     fortalt henter vi med Ikomm Academy kodetalenter ut av
@@ -38,12 +38,11 @@ export const staticTextHomeEn = {
   headerSectionTextHEn:
     'It\'s about giving smart people a chance, and finding smart people who will take it.',
   headerSectionTextPEn: `With the Ikomm Academy, Ikomm is in close collaboration with NAV Lillehammer
-     proved that there are still real win-win situations.In short summary: , with Ikomm Academy we source coding talents from
+     proved that there are still real win-win situations.In short summary: with Ikomm Academy we source coding talents from
      The NAV system, trains them in modern development principles and
-     coding language, and gets them to work - either with us or with someone else
-     second. As an employer, we get hold of the skills we lack, NAV
+     coding language, and gets them to work - either with us or with other companies. As an employer, we get hold of the skills we lack, NAV
      gets people into work, society makes better use of our resources, and
-     not least, the candidates themselves get a completely unique opportunity to get a career full of future possibilities.`,
+     last but not least, the candidates themselves get a completely unique opportunity to get a career full of future possibilities.`,
 
   categoriesSectionTextHEn: 'What do we focus on in Ikomm Academy?',
 

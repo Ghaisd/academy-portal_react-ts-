@@ -1,19 +1,19 @@
 import { Link } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
-type props = {
+type Props = {
   to: string;
   children: string;
 };
 
-const CustomLink = ({ to, children, ...props }: props) => (
+const RoutingLink = ({ to, children, ...restProps }: Props) => (
   <Link
     component={RouterLink}
     to={to}
-    {...props}
+    {...restProps}
+    color='text.primary'
     sx={{
       textDecoration: 'none',
-      color: 'text.primary',
       '&:hover': {
         color: 'primary.light',
         transition: 'all 400ms ease',
@@ -24,4 +24,4 @@ const CustomLink = ({ to, children, ...props }: props) => (
   </Link>
 );
 
-export default CustomLink;
+export default RoutingLink;

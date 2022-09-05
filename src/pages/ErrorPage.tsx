@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import CustomButton from '../Components/UI/RoutingButton';
+import RoutingButton from '../Components/UI/RoutingButton';
 
 const ErrorPage = () => (
   <Box
@@ -19,7 +19,7 @@ const ErrorPage = () => (
     <Typography variant='body1' mb={2} align='center'>
       We can&apos;t find the page you&apos;re looking for.
     </Typography>
-    <CustomButton to='/'>Go back home</CustomButton>
+    <RoutingButton to='/'>Go back home</RoutingButton>
   </Box>
 );
 
