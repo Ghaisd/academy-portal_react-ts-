@@ -1,5 +1,4 @@
-/* eslint-disable max-len */
-const categories = [
+export const categoriesNo = [
   {
     headerText: 'Kodespråk',
     paragraphText:
@@ -26,4 +25,29 @@ const categories = [
   },
 ];
 
-export default categories;
+export const categoriesEn = [
+  {
+    headerText: 'Programming languages',
+    paragraphText:
+      'We focus on building a foundation with C# and ASP.NET, with elements of HTML/CSS and JavaScript. Gradually in the course, you can specialize a little more, and like to choose a direction. We combine lectures with assignments, mini-projects, and a larger case study - and in the end, you are left with a fairly broad base of experience.',
+    iconClass: 'bi bi-laptop',
+  },
+  {
+    headerText: 'Problem solving',
+    paragraphText:
+      'Development is more than anything else continuous problem solving, with Google as a best friend. It requires a good understanding of the problem, and then searching for and evaluating possible solutions is a small craft of its own.',
+    iconClass: 'bi bi-chat-dots-fill',
+  },
+  {
+    headerText: 'Cooperation and communication',
+    paragraphText:
+      'The biggest difference when you go from a hobby programmer to a professional developer\'s everyday life is that you are part of a team, in an organization, with customers. It makes completely different demands on both communication and documentation.',
+    iconClass: 'bi bi-people-fill',
+  },
+  {
+    headerText: 'Method and process',
+    paragraphText:
+      'A developer\'s everyday life is also characterized by some methods and processes that make the wheels turn.',
+    iconClass: 'bi bi-gear-fill',
+  },
+];

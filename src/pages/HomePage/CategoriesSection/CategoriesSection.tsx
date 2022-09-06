@@ -1,19 +1,19 @@
-import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import { useTranslation } from 'react-i18next';
 import { routes } from '../../../App';
+import Text from '../../../Components/Text';
 import RoutingButton from '../../../Components/UI/RoutingButton';
-import categories from '../../../data/categories';
-import { staticTextHomeNo } from '../../../data/staticText';
+import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
+import { categoriesNo, categoriesEn } from '../../../data/categories';
+import { staticTextHomeNo, staticTextHomeEn } from '../../../data/staticText';
 import Category from './Category';
 
-const {
-  categoriesSectionTextHNo: categoriesSectionTextH,
-  categoriesSectionTextPNo: categoriesSectionTextP,
-} = staticTextHomeNo;
+const { categoriesSectionTextHNo, categoriesSectionTextPNo } = staticTextHomeNo;
+
+const { categoriesSectionTextHEn, categoriesSectionTextPEn } = staticTextHomeEn;
 
 const CategoriesSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <Box
       display='grid'
@@ -25,12 +25,19 @@ const CategoriesSection = () => {
       pl={24}
     >
       <Box mr={8}>
-        <Typography color='text.primary' variant='h3'>
-          {categoriesSectionTextH}
-        </Typography>
-        <Typography mt={2} mb={6} color='text.primary' variant='h6'>
-          {categoriesSectionTextP}
-        </Typography>
+        <Text
+          textNo={categoriesSectionTextHNo}
+          textEn={categoriesSectionTextHEn}
+          variant='h3'
+        />
+        <Text
+          textNo={categoriesSectionTextPNo}
+          textEn={categoriesSectionTextPEn}
+          variant='h6'
+          mt={2}
+          mb={6}
+        />
+
         <RoutingButton
           sx={{
             bgcolor: 'primary.light',
@@ -51,7 +58,7 @@ const CategoriesSection = () => {
       </Box>
 
       <Box display='grid' gridTemplateColumns='repeat(2, 1fr)' gap={2.4}>
-        {categories.map((category) => (
+        {PickTxtLng(categoriesNo, categoriesEn).map((category) => (
           <Category
             key={category.headerText}
             headerText={category.headerText}
