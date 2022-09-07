@@ -1,14 +1,20 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 
-type props = {
-  categoryIcon: string;
+export type CategoryType = {
   headerText: string;
   paragraphText: string;
+  iconClass: string;
 };
 
-const Category = ({ categoryIcon, headerText, paragraphText }: props) => {
-  const cssIcon = categoryIcon;
+export type CategoryProps = {
+  category: CategoryType;
+};
+
+const Category = ({
+  category: { headerText, paragraphText, iconClass },
+}: CategoryProps) => {
+  const cssIcon = iconClass;
   return (
     <Box bgcolor='primary.light' p={2} borderRadius={8}>
       <Box bgcolor='secondary.main' p={1} borderRadius={4} width={18}>

@@ -2,13 +2,16 @@ import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { useState } from 'react';
 
-type props = {
+export type FaqType = {
   headerText: string;
   paragraphText: string;
 };
 
-const Faq = ({ headerText, paragraphText }: props) => {
-  // eslint-disable-next-line max-len
+export type FaqProps = {
+  faq: FaqType;
+};
+
+const Faq = ({ faq: { headerText, paragraphText } }: FaqProps) => {
   const [faqIcon, setFaqIcon] = useState('bi bi-plus-square');
   const [displayMode, setDisplayMode] = useState('none');
   const [height, setHeight] = useState<number | string>(30);

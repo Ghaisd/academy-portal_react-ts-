@@ -1,5 +1,4 @@
-/* eslint-disable max-len */
-const testimonials = [
+export const testimonialsNo = [
   {
     image: '/images/avatar1.png',
     name: 'Tor André Pettersen',
@@ -32,4 +31,36 @@ const testimonials = [
   },
 ];
 
-export default testimonials;
+export const testimonialsEn = [
+  {
+    image: '/images/avatar1.png',
+    name: 'Tor André Pettersen',
+    role: 'Student 2022',
+    paragraphText: 'It is a really tough course, with an incredible amount to learn in an incredibly short time, but as long as you get through it, you have learned a fantastic amount, made new friends, made contacts in several IT companies, and learned about how working as a developer is! Extremely educational course!',
+  },
+  {
+    image: '/images/avatar2.png',
+    name: 'Kristian Enge',
+    role: 'Development manager at Ikomm',
+    paragraphText: 'As one of the initiators of the program, it has been really cool to see how well it has actually turned out. We have learned a lot along the way and made changes along the way, and for those around us there is no doubt that it requires a lot of resources to run such a program, both before, during and afterwards. The bottom line is clear, our development team is today in much better shape because of Ikomm Academy, so for us, Ikomm and hopefully our customers, it is absolutely invaluable.',
+  },
+  {
+    image: '/images/avatar3.png',
+    name: 'Marius Kristiansen',
+    role: 'Student 2021',
+    paragraphText: 'Very tough course, learned an incredible amount! Also gave me a gate point to Ikomm, where I now work as a developer!',
+  },
+  {
+    image: '/images/avatar4.png',
+    name: 'Nichlas Bergseter',
+    role: 'Student 2019',
+    paragraphText: 'Glad I could join the course here, it taught me a lot and got me a job at Ikomm. It\'s also very cool to follow new participants, and see how many smart people we find every year.',
+  },
+  {
+    image: '/images/avatar5.png',
+    name: 'Erik van Appeldoorn',
+    role: 'Lecturer',
+    paragraphText: 'Absolutely fantastic to have the opportunity to train so many participants to become full-fledged developers! A great chance for the participants, and an enormous resource for Ikomm and the participating companies.',
+  },
+];
+

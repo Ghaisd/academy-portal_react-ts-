@@ -6,14 +6,14 @@ import RoutingButton from '../../../Components/UI/RoutingButton';
 import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
 import { categoriesNo, categoriesEn } from '../../../data/categories';
 import { staticTextHomeNo, staticTextHomeEn } from '../../../data/staticText';
-import Category from './Category';
+import Category, { CategoryType } from './Category';
 
 const { categoriesSectionTextHNo, categoriesSectionTextPNo } = staticTextHomeNo;
 
 const { categoriesSectionTextHEn, categoriesSectionTextPEn } = staticTextHomeEn;
 
 const CategoriesSection = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <Box
       display='grid'
@@ -58,14 +58,11 @@ const CategoriesSection = () => {
       </Box>
 
       <Box display='grid' gridTemplateColumns='repeat(2, 1fr)' gap={2.4}>
-        {PickTxtLng(categoriesNo, categoriesEn).map((category) => (
-          <Category
-            key={category.headerText}
-            headerText={category.headerText}
-            paragraphText={category.paragraphText}
-            categoryIcon={category.iconClass}
-          />
-        ))}
+        {PickTxtLng<CategoryType[]>(categoriesNo, categoriesEn).map(
+          (category) => (
+            <Category key={category.headerText} category={category} />
+          ),
+        )}
       </Box>
     </Box>
   );

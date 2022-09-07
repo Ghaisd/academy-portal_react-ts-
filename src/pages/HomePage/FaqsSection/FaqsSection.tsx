@@ -1,8 +1,9 @@
 import { Typography } from '@mui/material';
 import { Box, Container } from '@mui/system';
 import { useTranslation } from 'react-i18next';
-import faqs from '../../../data/faqs';
-import Faq from './Faq';
+import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
+import { faqsNo, faqsEn } from '../../../data/faqs';
+import Faq, { FaqType } from './Faq';
 
 const FaqsSection = () => {
   const { t } = useTranslation();
@@ -13,13 +14,11 @@ const FaqsSection = () => {
           {t('FAQ')}
         </Typography>
         <Box display='grid' gridTemplateColumns='1fr 1fr' gap={2} pb={4}>
-          {faqs.map((faq) => (
-            <Faq
-              key={faq.headerText}
-              headerText={faq.headerText}
-              paragraphText={faq.paragraphText}
-            />
-          ))}
+          {PickTxtLng<FaqType[]>(faqsNo, faqsEn).map(
+            (faq: { headerText: string; paragraphText: string }) => (
+              <Faq key={faq.headerText} faq={faq} />
+            ),
+          )}
         </Box>
       </Container>
     </Box>

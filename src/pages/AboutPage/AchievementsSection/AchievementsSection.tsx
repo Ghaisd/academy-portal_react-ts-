@@ -1,12 +1,15 @@
 import { Box, Container } from '@mui/system';
 import { Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { staticTextAboutNo } from '../../../data/staticText';
+import { staticTextAboutNo, staticTextAboutEn } from '../../../data/staticText';
 import achievements from '../../../data/achievements';
 import Achievement from './Achievement';
+import Text from '../../../Components/Text';
+
+const { achievementsSectionTextPNo } = staticTextAboutNo;
+const { achievementsSectionTextPEn } = staticTextAboutEn;
 
 const AchievementsSection = () => {
-  const { achievementsSectionTextPNo } = staticTextAboutNo;
   const { t } = useTranslation();
   return (
     <Container maxWidth='xl'>
@@ -20,9 +23,15 @@ const AchievementsSection = () => {
           <Typography color='text.primary' variant='h3'>
             {t('Achievements')}
           </Typography>
-          <Typography color='text.primary' variant='subtitle1' py={2}>
+          {/* <Typography color='text.primary' variant='subtitle1' py={2}>
             {achievementsSectionTextPNo}
-          </Typography>
+          </Typography> */}
+          <Text
+            textNo={achievementsSectionTextPNo}
+            textEn={achievementsSectionTextPEn}
+            variant='subtitle1'
+            py={2}
+          />
           <Box display='grid' gridTemplateColumns='repeat(2, 4fr)' gap={2.4}>
             {achievements.map((achievement) => (
               <Achievement

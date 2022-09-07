@@ -54,7 +54,7 @@ export const staticTextHomeEn = {
 };
 
 export const staticTextAboutEn = {
-  achievementsSectionTextPEn: `We work to get people out of the NAV system and into completely new ones
+  achievementsSectionTextPEn: `We work to get people out of the NAV system and into completely new
       careers, and in record time. It's not a trifle. We are many
       who helps to make this possible, be it the eminent one
       the lecturer from the Netherlands, a wonderful collaboration with zealots in

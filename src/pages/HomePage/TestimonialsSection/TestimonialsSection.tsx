@@ -6,8 +6,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { useTranslation } from 'react-i18next';
-import testimonials from '../../../data/testimonials';
-import Testimonial from './Testimonial';
+import Testimonial, { TestimonialType } from './Testimonial';
+import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
+import { testimonialsEn, testimonialsNo } from '../../../data/testimonials';
 
 const TestimonialsSection = () => {
   const { t } = useTranslation();
@@ -44,17 +45,13 @@ const TestimonialsSection = () => {
           scrollbar={{ draggable: true }}
           pagination={{ clickable: true }}
         >
-          {testimonials.map((testimonial) => (
-            <SwiperSlide key={testimonial.name}>
-              <Testimonial
-                key={testimonial.name}
-                imageLink={testimonial.image}
-                name={testimonial.name}
-                role={testimonial.role}
-                paragraphText={testimonial.paragraphText}
-              />
-            </SwiperSlide>
-          ))}
+          {PickTxtLng<TestimonialType[]>(testimonialsNo, testimonialsEn).map(
+            (testimonial) => (
+              <SwiperSlide key={testimonial.name}>
+                <Testimonial testimonial={testimonial} />
+              </SwiperSlide>
+            ),
+          )}
         </Swiper>
       </Container>
     </>
