@@ -2,9 +2,10 @@ import { Box, Container } from '@mui/system';
 import { Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { staticTextAboutNo, staticTextAboutEn } from '../../../data/staticText';
-import achievements from '../../../data/achievements';
-import Achievement from './Achievement';
+import Achievement, { AchievementType } from './Achievement';
 import Text from '../../../Components/Text';
+import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
+import { achievementsEn, achievementsNo } from '../../../data/achievements';
 
 const { achievementsSectionTextPNo } = staticTextAboutNo;
 const { achievementsSectionTextPEn } = staticTextAboutEn;
@@ -23,9 +24,6 @@ const AchievementsSection = () => {
           <Typography color='text.primary' variant='h3'>
             {t('Achievements')}
           </Typography>
-          {/* <Typography color='text.primary' variant='subtitle1' py={2}>
-            {achievementsSectionTextPNo}
-          </Typography> */}
           <Text
             textNo={achievementsSectionTextPNo}
             textEn={achievementsSectionTextPEn}
@@ -33,14 +31,11 @@ const AchievementsSection = () => {
             py={2}
           />
           <Box display='grid' gridTemplateColumns='repeat(2, 4fr)' gap={2.4}>
-            {achievements.map((achievement) => (
-              <Achievement
-                key={achievement.nr}
-                nrOfAchievement={achievement.nr}
-                iconAchievement={achievement.icon}
-                finishedAchievement={achievement.finished}
-              />
-            ))}
+            {PickTxtLng<AchievementType[]>(achievementsNo, achievementsEn).map(
+              (achievement) => (
+                <Achievement key={achievement.nrOfAchievement} achievement={achievement} />
+              ),
+            )}
           </Box>
         </Box>
       </Box>

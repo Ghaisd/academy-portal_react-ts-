@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Box } from '@mui/system';
 import { Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 import RoutingButton from '../../../Components/UI/RoutingButton';
 import CustomIcon from '../../../Components/UI/InteractiveIcon';
 import useStudents from '../../../api/hooks/useStudents';
@@ -9,6 +10,7 @@ import { StudentType } from '../../../api/api';
 import Loading from '../../../Components/Loading';
 
 const StudentPage = () => {
+  const {t} = useTranslation();
   const { id } = useParams<string>();
   const [student, setStudent] = useState<StudentType>();
 
@@ -71,7 +73,7 @@ const StudentPage = () => {
           }}
           to='#'
         >
-          Last ned CV
+          {t('DownloadCV')}
         </RoutingButton>
       </Box>
       <Box

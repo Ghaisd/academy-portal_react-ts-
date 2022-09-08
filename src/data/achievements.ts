@@ -1,24 +1,46 @@
-const achievements = [
+export const achievementsNo = [
   {
-    icon: 'bi bi-check-square-fill',
-    nr: '2',
-    finished: 'runder gjennomført',
+    iconAchievement: 'bi bi-check-square-fill',
+    nrOfAchievement: '2',
+    finishedAchievement: 'runder gjennomført',
   },
   {
-    icon: 'bi bi-people-fill',
-    nr: '13',
-    finished: 'studenter starter',
+    iconAchievement: 'bi bi-people-fill',
+    nrOfAchievement: '13',
+    finishedAchievement: 'studenter starter',
   },
   {
-    icon: 'bi bi-award-fill',
-    nr: '10',
-    finished: 'som fullførte',
+    iconAchievement: 'bi bi-award-fill',
+    nrOfAchievement: '10',
+    finishedAchievement: 'som fullførte',
   },
   {
-    icon: 'bi bi-trophy-fill',
-    nr: '9',
-    finished: 'av disse jobber i dag innen IT',
+    iconAchievement: 'bi bi-trophy-fill',
+    nrOfAchievement: '9',
+    finishedAchievement: 'av disse jobber i dag innen IT',
   },
 ];
 
-export default achievements;
+export const achievementsEn = [
+  {
+    iconAchievement: 'bi bi-check-square-fill',
+    nrOfAchievement: '2',
+    finishedAchievement: 'courses completed',
+  },
+  {
+    iconAchievement: 'bi bi-people-fill',
+    nrOfAchievement: '13',
+    finishedAchievement: 'students started',
+  },
+  {
+    iconAchievement: 'bi bi-award-fill',
+    nrOfAchievement: '10',
+    finishedAchievement: 'completed the course',
+  },
+  {
+    iconAchievement: 'bi bi-trophy-fill',
+    nrOfAchievement: '9',
+    finishedAchievement: 'of them are currently working in IT-related field',
+  },
+];
+

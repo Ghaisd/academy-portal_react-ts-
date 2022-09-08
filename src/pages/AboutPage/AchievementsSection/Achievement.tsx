@@ -1,18 +1,19 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 
-type props = {
+export type AchievementType = {
   iconAchievement: string;
   nrOfAchievement: string;
   finishedAchievement: string;
 };
 
-// eslint-disable-next-line max-len
+export type AchievementProps = {
+  achievement: AchievementType;
+};
+
 const Achievement = ({
-  iconAchievement,
-  nrOfAchievement,
-  finishedAchievement,
-}: props) => (
+  achievement: { iconAchievement, nrOfAchievement, finishedAchievement },
+}: AchievementProps) => (
   <Box
     bgcolor='primary.main'
     p={1.6}
