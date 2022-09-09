@@ -43,4 +43,3 @@ export const achievementsEn = [
     finishedAchievement: 'of them are currently working in IT-related field',
   },
 ];
-
