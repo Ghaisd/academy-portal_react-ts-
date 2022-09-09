@@ -4,6 +4,7 @@ import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import useArticles from '../../api/hooks/useArticles';
 import { ArticleType } from '../../api/api';
+import Loading from '../../Components/Loading';
 
 const ArticlePage = () => {
   const { id } = useParams<string>();
@@ -23,7 +24,15 @@ const ArticlePage = () => {
     }
   }, [id, articles, setArticle]);
   if (error) return <h1>{error}</h1>;
-  if (!data) return <h1>Loading</h1>;
+  if (!data) {
+    return (
+      <Loading
+        sx={{
+          py: '50vh',
+        }}
+      />
+    );
+  }
   return (
     <>
       <Box

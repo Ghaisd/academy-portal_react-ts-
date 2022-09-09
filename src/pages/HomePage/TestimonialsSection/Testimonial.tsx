@@ -1,18 +1,24 @@
 import { Avatar, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 
-type props = {
-  imageLink: string;
+export type TestimonialType = {
   name: string;
+  image: string;
   role: string;
   paragraphText: string;
 };
 
-const Testimonial = ({ imageLink, name, role, paragraphText }: props) => (
+export type TestimonialProps = {
+  testimonial: TestimonialType;
+};
+
+const Testimonial = ({
+  testimonial: { name, image, role, paragraphText },
+}: TestimonialProps) => (
   <Box mt={6}>
     <Avatar
       alt='Remy Sharp'
-      src={imageLink}
+      src={image}
       sx={{ width: 84, height: 84, m: '0 auto 1rem' }}
     />
 

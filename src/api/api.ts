@@ -1,5 +1,5 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const fetcher = (url: string) => fetch(url).then((r: any) => r.json());
+// eslint-disable-next-line @typescript-eslint/no-explicit-any, max-len, no-console
+export const fetcher = (url: string) => fetch(url).then((r: any) => r.json()).catch((error) => console.log(error));
 export const articlesUrl = 'https://localhost:7045/api/article';
 export const studentsUrl = 'https://localhost:7045/api/allstudents';
 

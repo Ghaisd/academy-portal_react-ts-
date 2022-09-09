@@ -3,6 +3,7 @@ import { Box } from '@mui/system';
 import { useTranslation } from 'react-i18next';
 import { StudentType } from '../../../api/api';
 import useStudents from '../../../api/hooks/useStudents';
+import Loading from '../../../Components/Loading';
 import Student from './Student';
 
 const StudentsSection = () => {
@@ -33,7 +34,12 @@ const StudentsSection = () => {
             />
           ))
         ) : (
-          <h1>Loading...</h1>
+          <Loading
+            sx={{
+              pl: '48vw',
+              py: '15vh',
+            }}
+          />
         )}
       </Box>
     </>

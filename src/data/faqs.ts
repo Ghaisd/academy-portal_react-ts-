@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-const faqs = [
+export const faqsNo = [
   {
     headerText: 'Hvem kan delta på Ikomm Academy?',
     paragraphText:
@@ -36,4 +36,40 @@ const faqs = [
   },
 ];
 
-export default faqs;
+export const faqsEn = [
+  {
+    headerText: 'Who can participate in Ikomm Academy?',
+    paragraphText:
+      'You can participate in Ikomm Academy through Nav. Talk to your contact person from Nav for more information',
+  },
+
+  {
+    headerText: 'How many participants are there?',
+    paragraphText:
+      'The number of participants varies slightly depending on the level of applicants and how many applicants we have. We try to keep everyone at roughly the same level of knowledge as much as possible, so if we have many applicants at the same level, we have more participants. The previous course (2022) had 7 participants.',
+  },
+
+  {
+    headerText: 'What prior knowledge is required?',
+    paragraphText:
+      'You don\'t need any prior knowledge to join Ikomm Academy! Having said that, we always have a review/testing of potential participants, and it is clear that the course will be easier for those who already know a little, but everyone can learn!',
+  },
+  {
+    headerText: 'How long does the course last?',
+    paragraphText:
+      'The course lasts for 7 months (plus one month summer holiday), over three phases: - The course period, which is 2 months of lectures and intense theory learning. - The project phase, which is 2 months of working in a team, where you have to create an actual product. - The practice phase, which is 3 months of practice in one of the participating companies.',
+  },
+
+  {
+    headerText: 'In which companies can I have an internship?',
+    paragraphText:
+      'Traditionally, we usually have candidates in practice either in Eidsiva Bredbånd, Norkart, or here in Ikomm.',
+  },
+
+  {
+    headerText: 'Can I get a job after the course?',
+    paragraphText:
+      'It is of course not guaranteed that you will have a job immediately after the course, but in the vast majority of cases we have seen, our participants get a job or an extended internship period in the company where they have had an internship.',
+  },
+];
+

@@ -2,12 +2,15 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Box } from '@mui/system';
 import { Typography } from '@mui/material';
-import CustomButton from '../../../Components/UI/RoutingButton';
+import { useTranslation } from 'react-i18next';
+import RoutingButton from '../../../Components/UI/RoutingButton';
 import CustomIcon from '../../../Components/UI/InteractiveIcon';
 import useStudents from '../../../api/hooks/useStudents';
 import { StudentType } from '../../../api/api';
+import Loading from '../../../Components/Loading';
 
 const StudentPage = () => {
+  const {t} = useTranslation();
   const { id } = useParams<string>();
   const [student, setStudent] = useState<StudentType>();
 
@@ -25,7 +28,15 @@ const StudentPage = () => {
     }
   }, [id, students, setStudent, student]);
   if (error) return <h1>{error}</h1>;
-  if (!data) return <h1>Loading</h1>;
+  if (!data) {
+    return (
+      <Loading
+        sx={{
+          py: '50vh',
+        }}
+      />
+    );
+  }
   return (
     <Box
       py={40}
@@ -56,14 +67,14 @@ const StudentPage = () => {
           <CustomIcon href='https://linkedin.com' iconType='bi bi-linkedin' />
           <CustomIcon href={student?.Github} iconType='bi bi-github' />
         </Box>
-        <CustomButton
+        <RoutingButton
           sx={{
             bgcolor: 'warning.main',
           }}
           to='#'
         >
-          Last ned CV
-        </CustomButton>
+          {t('DownloadCV')}
+        </RoutingButton>
       </Box>
       <Box
         component='img'

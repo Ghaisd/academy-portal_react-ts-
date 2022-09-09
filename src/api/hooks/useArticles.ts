@@ -12,7 +12,10 @@ const useArticles = (): Articles => {
     fetcher,
   );
   return (
-    { data, error }
+    {
+      data,
+      error,
+    }
   );
 };
 

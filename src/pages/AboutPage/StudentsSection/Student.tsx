@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Avatar, Container, Stack, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { routes } from '../../../App';
 import CustomIcon from '../../../Components/UI/InteractiveIcon';
@@ -11,27 +11,37 @@ type props = {
   Linkedin: string;
 };
 const Student = ({ src, Name, smallInfo, Github, Linkedin }: props) => (
-  <Box border={10} borderColor='secondary.main' bgcolor='primary.light' mr={14}>
-    <Box display='flex' alignItems='center'>
-      <Box component='img' src={src} alt='Student' height='300px' />
-      <Box display='flex' flexDirection='column' justifyContent='center'>
-        <CustomIcon
-          href={`${routes.About}/${Name}`}
-          iconType='bi bi-file-earmark-person'
-        />
-        <CustomIcon href={Linkedin} iconType='bi bi-linkedin' />
-        <CustomIcon href={Github} iconType='bi bi-github' />
-      </Box>
-    </Box>
+  <Container
+    sx={{
+      border: 10,
+      borderColor: 'secondary.main',
+      bgcolor: 'primary.light',
+      width: 280,
+      ml: 15,
+    }}
+  >
+    <Avatar
+      alt='student'
+      src={src}
+      sx={{ width: 200, height: 200, mx: 'auto' }}
+    />
+    <Stack direction='row' mx='auto' my={1}>
+      <CustomIcon
+        href={`${routes.About}/${Name}`}
+        iconType='bi bi-file-earmark-person'
+      />
+      <CustomIcon href={Linkedin} iconType='bi bi-linkedin' />
+      <CustomIcon href={Github} iconType='bi bi-github' />
+    </Stack>
     <Box>
-      <Typography pt={2} color='text.primary' variant='h4' align='center'>
+      <Typography py={2} color='text.primary' variant='h4' align='center'>
         {Name}
       </Typography>
-      <Typography color='info.main' pl={2} variant='h6'>
+      <Typography color='info.main' variant='h6'>
         {smallInfo}
       </Typography>
     </Box>
-  </Box>
+  </Container>
 );
 
 export default Student;

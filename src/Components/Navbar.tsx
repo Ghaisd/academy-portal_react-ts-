@@ -1,6 +1,6 @@
 import { Typography, AppBar, Toolbar, Stack } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import CustomLink from './UI/RoutingLink';
+import RoutingLink from './UI/RoutingLink';
 import { routes } from '../App';
 import HideOnScroll from './UI/HideOnScroll';
 import LanguageMenu from './LanguageMenu';
@@ -17,15 +17,15 @@ const Navbar = () => {
             component='div'
             sx={{ flexGrow: 1 }}
           >
-            <CustomLink to='/'>IKOMM ACADEMY</CustomLink>
+            <RoutingLink to='/'>IKOMM ACADEMY</RoutingLink>
             <LanguageMenu />
           </Typography>
           <Stack direction='row' spacing={7}>
-            <CustomLink to={routes.Home}>{t('Home')}</CustomLink>
-            <CustomLink to={routes.Articles}>{t('Articles')}</CustomLink>
-            <CustomLink to={routes.About}>{t('Participants')}</CustomLink>
-            <CustomLink to={routes.AcademyTV}>{t('AcademyTV')}</CustomLink>
-            <CustomLink to={routes.Contact}>{t('Contact')}</CustomLink>
+            <RoutingLink to={routes.Home}>{t('Home')}</RoutingLink>
+            <RoutingLink to={routes.Articles}>{t('Articles')}</RoutingLink>
+            <RoutingLink to={routes.About}>{t('Participants')}</RoutingLink>
+            <RoutingLink to={routes.AcademyTV}>{t('AcademyTV')}</RoutingLink>
+            <RoutingLink to={routes.Contact}>{t('Contact')}</RoutingLink>
           </Stack>
         </Toolbar>
       </AppBar>

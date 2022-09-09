@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { useTranslation } from 'react-i18next';
 import { routes } from '../../App';
-import CustomButton from '../../Components/UI/RoutingButton';
+import RoutingButton from '../../Components/UI/RoutingButton';
 
 type props = {
   src: string;
@@ -54,7 +54,7 @@ const Article = ({ src, headline, author, articleContent, id }: props) => {
           {articleContent}
         </Typography>
       </Box>
-      <CustomButton
+      <RoutingButton
         sx={{
           bgcolor: 'warning.main',
           mb: 4,
@@ -62,7 +62,7 @@ const Article = ({ src, headline, author, articleContent, id }: props) => {
         to={`${routes.Articles}/${id}`}
       >
         {t('ReadMore')}
-      </CustomButton>
+      </RoutingButton>
     </Box>
   );
 };
