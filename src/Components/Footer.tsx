@@ -8,20 +8,23 @@ import { routes } from '../App';
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <Box bgcolor='primary.main' mt={30}>
-      <Container maxWidth='lg' >
-        <Grid container spacing={20} ml={20}>
-          <Grid>
-            <Box mr={8}>
+    <footer>
+    <Box 
+    px={{xs:3,sm:10}}
+    py={{xs:5}}
+    bgcolor='primary.main' >
+      <Container maxWidth='lg'>
+        <Grid container spacing={20}>
+            <Grid item xs={12} sm = {4}>
               <Typography
                 color='text.primary'
-                variant='h4'
+                variant='h5'
                 component='div'
                 sx={{ flexGrow: 1 }}
               >
                 <RoutingLink to='/'>IKOMM ACADEMY</RoutingLink>
               </Typography>
-              <Typography color='text.primary' variant='subtitle1' pt={2}>
+              <Typography color='text.primary' variant='subtitle1' pt={1}>
                 Talent finnes overalt for den som leter.
               </Typography>
               <Box
@@ -31,27 +34,26 @@ const Footer = () => {
                 mt={6}
                 width={0.8}
               />
-            </Box>
-          </Grid>
-          <Grid ml={12}>
-            <Typography
+            </Grid>
+            <Grid item xs={12} sm = {4}>
+               <Typography
               color='text.primary'
               variant='h4'
               borderBottom={1}
-              mb={1}
             >
               {t('QuickLinks')}
             </Typography>
-            <Box display='flex' flexDirection='column' gap={1}>
+            <Box display='flex' flexDirection='column' gap={2} pt={2}>
               <RoutingLink to={routes.Home}>{t('Home')}</RoutingLink>
               <RoutingLink to={routes.Articles}>{t('Articles')}</RoutingLink>
               <RoutingLink to={routes.About}>{t('Participants')}</RoutingLink>
               <RoutingLink to={routes.AcademyTV}>{t('AcademyTV')}</RoutingLink>
               <RoutingLink to={routes.Contact}>{t('Contact')}</RoutingLink>
             </Box>
-          </Grid>
-          <Grid ml={24}>
-            <Box display='flex' flexDirection='column' gap={2}>
+            </Grid>
+
+            <Grid item xs={12} sm = {4}>
+                  <Box display='flex' flexDirection='column' gap={2}>
               <Typography color='text.primary' variant='h4' borderBottom={1}>
                 {t('Contact')}
               </Typography>
@@ -72,19 +74,24 @@ const Footer = () => {
                 />
               </Box>
             </Box>
-          </Grid>
-        </Grid>
-        <Typography
+            </Grid>
+            </Grid>
+            <Box textAlign='center' pt={{sm:5,xs:5}} mb={{sm:-5,xs:-5}}
+            >
+               <Typography
           color='text.primary'
           variant='h6'
           textAlign='center'
-          mt={4}
           borderTop={1}
-        >
-          Copyright &copy;2022 IKOMM-ACADEMY
+          >
+          Copyright &copy;{new Date().getFullYear()} IKOMM-ACADEMY
         </Typography>
-      </Container>
+            </Box>
+          </Container>
+
+          
     </Box>
+    </footer>
   );
 };
 
