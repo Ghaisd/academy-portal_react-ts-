@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { Typography , Box } from '@mui/material';
+
 import useArticles from '../../api/hooks/useArticles';
 import { ArticleType } from '../../api/api';
 import Loading from '../../Components/Loading';

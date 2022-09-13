@@ -1,6 +1,5 @@
-import { Box, Container } from '@mui/system';
-import Grid from '@mui/system/Unstable_Grid/Grid';
-import { Typography } from '@mui/material';
+import { Box, Container , Grid, Typography } from '@mui/material';
+
 import { useTranslation } from 'react-i18next';
 import RoutingLink from './UI/RoutingLink';
 import CustomIcon from './UI/InteractiveIcon';
@@ -9,9 +8,9 @@ import { routes } from '../App';
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <Box bgcolor='primary.main' py={2} m={-1}>
-      <Container maxWidth='xl'>
-        <Grid container spacing={20}>
+    <Box bgcolor='primary.main' mt={30}>
+      <Container maxWidth='lg' >
+        <Grid container spacing={20} ml={20}>
           <Grid>
             <Box mr={8}>
               <Typography

@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Virtual } from 'swiper';
-import { Container } from '@mui/system';
-import { Typography } from '@mui/material';
+import { Container , Typography } from '@mui/material';
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';

@@ -1,5 +1,5 @@
-import { CardMedia } from '@mui/material';
-import { Box } from '@mui/system';
+import { CardMedia , Box } from '@mui/material';
+
 import { useTranslation } from 'react-i18next';
 import { routes } from '../../App';
 import Text from '../../Components/Text';

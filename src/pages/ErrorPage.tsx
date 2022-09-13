@@ -1,5 +1,5 @@
-import { Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { Typography , Box } from '@mui/material';
+
 import RoutingButton from '../Components/UI/RoutingButton';
 
 const ErrorPage = () => (

@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { Box } from '@mui/system';
-import { Typography } from '@mui/material';
+import { Box , Typography } from '@mui/material';
+
 import { useTranslation } from 'react-i18next';
 import RoutingButton from '../../../Components/UI/RoutingButton';
 import CustomIcon from '../../../Components/UI/InteractiveIcon';
