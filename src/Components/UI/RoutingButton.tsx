@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button } from '@mui/material';
+import { Button , SxProps } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { SxProps } from '@mui/system';
+
 
 type props = {
   to: string;

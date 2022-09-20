@@ -1,5 +1,5 @@
-import { Avatar, Container, Stack, Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { Avatar, Container, Stack, Typography , Box } from '@mui/material';
+
 import { routes } from '../../../App';
 import CustomIcon from '../../../Components/UI/InteractiveIcon';
 

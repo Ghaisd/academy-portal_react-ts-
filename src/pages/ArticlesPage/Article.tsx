@@ -1,6 +1,4 @@
-/* eslint-disable react/jsx-one-expression-per-line */
-import { Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { Typography, Box } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { routes } from '../../App';
 import RoutingButton from '../../Components/UI/RoutingButton';

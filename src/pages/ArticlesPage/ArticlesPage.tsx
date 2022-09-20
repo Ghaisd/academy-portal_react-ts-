@@ -1,4 +1,4 @@
-import { Box } from '@mui/system';
+import { Box } from '@mui/material';
 import { ArticleType } from '../../api/api';
 import useArticles from '../../api/hooks/useArticles';
 import Loading from '../../Components/Loading';

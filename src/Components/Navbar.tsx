@@ -1,4 +1,4 @@
-import { Typography, AppBar, Toolbar, Stack } from '@mui/material';
+import { Typography, AppBar, Toolbar, Stack, Container } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import RoutingLink from './UI/RoutingLink';
 import { routes } from '../App';
@@ -10,6 +10,7 @@ const Navbar = () => {
   return (
     <HideOnScroll>
       <AppBar position='fixed' sx={{ bgcolor: 'secondary.main' }}>
+        <Container maxWidth='xl' >
         <Toolbar>
           <Typography
             color='text.primary'
@@ -28,6 +29,7 @@ const Navbar = () => {
             <RoutingLink to={routes.Contact}>{t('Contact')}</RoutingLink>
           </Stack>
         </Toolbar>
+        </Container>
       </AppBar>
     </HideOnScroll>
   );

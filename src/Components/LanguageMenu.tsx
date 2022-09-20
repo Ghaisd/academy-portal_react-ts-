@@ -2,7 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { Box } from '@mui/system';
+import { Box } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
 export default function LanguageMenu() {

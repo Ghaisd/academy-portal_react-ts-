@@ -1,5 +1,5 @@
-import { Avatar, Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { Avatar, Typography , Box } from '@mui/material';
+
 
 export type TestimonialType = {
   name: string;

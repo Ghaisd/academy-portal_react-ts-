@@ -1,5 +1,5 @@
-import { Typography } from '@mui/material';
-import { Box, Container } from '@mui/system';
+import { Typography , Box, Container } from '@mui/material';
+
 import { useTranslation } from 'react-i18next';
 import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
 import { faqsNo, faqsEn } from '../../../data/faqs';

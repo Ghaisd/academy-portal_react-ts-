@@ -1,5 +1,5 @@
-import { Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { Typography , Box } from '@mui/material';
+
 import { useTranslation } from 'react-i18next';
 import { ArticleType } from '../../api/api';
 import useArticles from '../../api/hooks/useArticles';

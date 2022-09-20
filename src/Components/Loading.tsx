@@ -1,6 +1,6 @@
 import React from 'react';
-import { Stack, CircularProgress, Typography } from '@mui/material';
-import { SxProps } from '@mui/system';
+import { Stack, CircularProgress, Typography , SxProps } from '@mui/material';
+
 
 type Props = {
   // eslint-disable-next-line react/require-default-props

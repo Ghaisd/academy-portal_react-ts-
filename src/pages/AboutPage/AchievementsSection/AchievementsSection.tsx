@@ -1,5 +1,5 @@
-import { Box, Container } from '@mui/system';
-import { Typography } from '@mui/material';
+import { Box, Container , Typography } from '@mui/material';
+
 import { useTranslation } from 'react-i18next';
 import { staticTextAboutNo, staticTextAboutEn } from '../../../data/staticText';
 import Achievement, { AchievementType } from './Achievement';

@@ -1,4 +1,4 @@
-import { Box } from '@mui/system';
+import { Box } from '@mui/material';
 import AchievementsSection from './AchievementsSection/AchievementsSection';
 import StudentsSection from './StudentsSection/StudentsSection';
 
