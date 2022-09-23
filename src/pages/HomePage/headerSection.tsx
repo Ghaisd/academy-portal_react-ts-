@@ -14,7 +14,7 @@ const HeaderSection = () => {
   return (
     <Stack 
     direction={{ xs: 'column', sm: 'row' }}
-    py={{sm:10}}
+    py={{sm:3}}
     justifyContent={{sm:'space-around'}}
     sx={{flexGrow: 1, display: { xs: {
       direction:'column'

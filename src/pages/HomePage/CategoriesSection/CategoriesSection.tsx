@@ -1,3 +1,4 @@
+import { Container, Stack } from '@mui/material';
 import Box from '@mui/material/Box';
 import { useTranslation } from 'react-i18next';
 import { routes } from '../../../App';
@@ -15,55 +16,63 @@ const { categoriesSectionTextHEn, categoriesSectionTextPEn } = staticTextHomeEn;
 const CategoriesSection = () => {
   const { t } = useTranslation();
   return (
-    <Box
-      display='grid'
-      gridTemplateColumns='40% 60%'
+    <Box bgcolor='primary.main' pt={5}>
+    <Container sx={{
+      maxWidth: {xs:'xl', sm:'xxl'}
+    }}>
+      <Stack
+      direction={{sm:'row'}}
       height={560}
       bgcolor='primary.main'
-      pt={12}
-      pr={5}
-      pl={24}
-    >
-      <Box mr={8}>
+      spacing={20}
+      >
+      <Stack spacing={5}>
         <Text
           textNo={categoriesSectionTextHNo}
           textEn={categoriesSectionTextHEn}
-          variant='h3'
+          variant='h1'
         />
         <Text
           textNo={categoriesSectionTextPNo}
           textEn={categoriesSectionTextPEn}
-          variant='h6'
-          mt={2}
-          mb={6}
+          variant='body1'
         />
+      <Stack direction='row' sx={{
+        pb:{xs:'3rem'},
+        pl:{xs:'3rem'}
 
+      }}>
         <RoutingButton
           sx={{
             bgcolor: 'primary.light',
+            width: '10rem',
+            mr: 5   
           }}
           to={routes.About}
-        >
+          >
           {t('ReadMore')}
         </RoutingButton>
         <RoutingButton
           to={routes.AcademyTV}
           sx={{
             bgcolor: 'primary.light',
-            ml: 2,
+            width: '10rem'
           }}
-        >
+          >
           {t('AcademyTV')}
         </RoutingButton>
-      </Box>
+          </Stack>
+      </Stack>
 
-      <Box display='grid' gridTemplateColumns='repeat(2, 1fr)' gap={2.4}>
+      <Stack display={{sm:'grid'}} gridTemplateColumns='repeat(2, 1fr)' gap={2.4}>
         {PickTxtLng<CategoryType[]>(categoriesNo, categoriesEn).map(
           (category) => (
             <Category key={category.headerText} category={category} />
           ),
         )}
-      </Box>
+      </Stack>
+    </Stack>
+    </Container>
     </Box>
   );
 };

@@ -12,7 +12,7 @@ const ArticlesSection = () => {
   if (error) return <h1>{error}</h1>;
 
   return (
-    <Box py={10}>
+    <Box py={10} pt={{xs:'250%', sm:'4rem'}}>
       <Typography pb={8} color='text.primary' variant='h3' align='center'>
         {t('Articles_News')}
       </Typography>

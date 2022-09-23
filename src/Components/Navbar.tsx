@@ -15,6 +15,7 @@ import { Stack } from '@mui/material';
 import { t } from 'i18next';
 import RoutingLink from './UI/RoutingLink';
 import { routes } from '../App';
+import LanguageMenu from './LanguageMenu';
 
 
 // import { Typography, AppBar, Toolbar, Stack, Container } from '@mui/material';
@@ -75,6 +76,7 @@ const ResponsiveAppBar = () => {
             }}
           >
            <RoutingLink to='/'>IKOMM ACADEMY</RoutingLink>
+           <LanguageMenu />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -125,6 +127,7 @@ const ResponsiveAppBar = () => {
             }}
           >
             <RoutingLink to='/'>IKOMM ACADEMY</RoutingLink>
+            <LanguageMenu />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
              <Stack direction='row' spacing={7} pl={80}>
