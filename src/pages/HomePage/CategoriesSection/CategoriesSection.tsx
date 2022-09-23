@@ -17,7 +17,7 @@ const { categoriesSectionTextHEn, categoriesSectionTextPEn } = staticTextHomeEn;
 const CategoriesSection = () => {
   const { t } = useTranslation();
   return (
-    <Box bgcolor='primary.main' pt={5} >
+    <Box bgcolor='primary.main' py={5} >
     <Container sx={{
       maxWidth: {xs:'xl', sm:'xxl'}
     }}>
