@@ -16,13 +16,13 @@ import { t } from 'i18next';
 import RoutingLink from './UI/RoutingLink';
 import { routes } from '../App';
 import LanguageMenu from './LanguageMenu';
-
+import HideOnScroll from './UI/HideOnScroll';
 
 // import { Typography, AppBar, Toolbar, Stack, Container } from '@mui/material';
 // import { useTranslation } from 'react-i18next';
 // import RoutingLink from './UI/RoutingLink';
 // import { routes } from '../App';
-// import HideOnScroll from './UI/HideOnScroll';
+// 
 // import LanguageMenu from './LanguageMenu';
 
 // const Navbar = () => {
@@ -66,7 +66,8 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position='static' sx={{bgcolor: 'secondary.main'}}>
+    <HideOnScroll>
+    <AppBar position='fixed' sx={{bgcolor: 'secondary.main'}}>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           <Typography
@@ -142,6 +143,7 @@ const ResponsiveAppBar = () => {
         </Toolbar>
       </Container>
     </AppBar>
+    </HideOnScroll>
   );
 };
 export default ResponsiveAppBar;

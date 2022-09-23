@@ -1,10 +1,10 @@
-import { Typography , Box } from '@mui/material';
-
+import { Typography , Box, Stack } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { ArticleType } from '../../api/api';
 import useArticles from '../../api/hooks/useArticles';
 import Loading from '../../Components/Loading';
 import Article from '../ArticlesPage/Article';
+import articles from '../../data/articles';
 
 const ArticlesSection = () => {
   const { data, error } = useArticles();
@@ -12,17 +12,16 @@ const ArticlesSection = () => {
   if (error) return <h1>{error}</h1>;
 
   return (
-    <Box py={10} pt={{xs:'250%', sm:'4rem'}}>
+    <Box py={10} >
       <Typography pb={8} color='text.primary' variant='h3' align='center'>
         {t('Articles_News')}
       </Typography>
-      {data ? (
-        <Box
-          justifyItems='center'
-          display='grid'
-          gridTemplateColumns='repeat(3, 1fr)'
+      {articles ? (
+        <Stack
+          direction={{sm:'row'}}
+          justifyContent={{sm:'space-evenly'}}
         >
-          {data.slice(0, 3).map((article: ArticleType) => (
+          {articles.slice(0, 3).map((article: ArticleType) => (
             <Article
               key={article.Id}
               id={article.Id}
@@ -32,9 +31,9 @@ const ArticlesSection = () => {
               src={article.ArticleImage}
             />
           ))}
-        </Box>
+        </Stack>
       ) : (
-        <Loading sx={{ py: '20vh' }} />
+         <Loading sx={{ py: '20vh' }} /> 
       )}
     </Box>
   );

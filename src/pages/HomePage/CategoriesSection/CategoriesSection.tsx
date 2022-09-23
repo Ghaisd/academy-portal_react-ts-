@@ -1,5 +1,6 @@
 import { Container, Stack } from '@mui/material';
 import Box from '@mui/material/Box';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { routes } from '../../../App';
 import Text from '../../../Components/Text';
@@ -16,13 +17,12 @@ const { categoriesSectionTextHEn, categoriesSectionTextPEn } = staticTextHomeEn;
 const CategoriesSection = () => {
   const { t } = useTranslation();
   return (
-    <Box bgcolor='primary.main' pt={5}>
+    <Box bgcolor='primary.main' pt={5} >
     <Container sx={{
       maxWidth: {xs:'xl', sm:'xxl'}
     }}>
       <Stack
       direction={{sm:'row'}}
-      height={560}
       bgcolor='primary.main'
       spacing={20}
       >
@@ -38,7 +38,7 @@ const CategoriesSection = () => {
           variant='body1'
         />
       <Stack direction='row' sx={{
-        pb:{xs:'3rem'},
+        pb:{xs:'4rem'},
         pl:{xs:'3rem'}
 
       }}>
@@ -64,7 +64,7 @@ const CategoriesSection = () => {
           </Stack>
       </Stack>
 
-      <Stack display={{sm:'grid'}} gridTemplateColumns='repeat(2, 1fr)' gap={2.4}>
+      <Stack mb={5} display={{sm:'grid'}} gridTemplateColumns='repeat(2, 1fr)' gap={2.4}>
         {PickTxtLng<CategoryType[]>(categoriesNo, categoriesEn).map(
           (category) => (
             <Category key={category.headerText} category={category} />

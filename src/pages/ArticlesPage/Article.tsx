@@ -21,7 +21,8 @@ const Article = ({ src, headline, author, articleContent, id }: props) => {
       display='grid'
       gridTemplateRows='auto 1fr auto'
       justifyItems='center'
-      width={420}
+      width={{sm:420}}
+      height={{xs:800}}
       mt={6.25}
       sx={{
         '&:hover': {
