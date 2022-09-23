@@ -11,7 +11,7 @@ type Props = TypographyProps &
 const Text = ({ textNo, textEn, color, ...restProps }: Props) => {
   const { i18n } = useTranslation();
   return (
-    <Typography color={color || 'text.primary'} {...restProps}>
+    <Typography variant='h1' color={color || 'text.primary'} {...restProps}>
       {i18n.language === 'no' ? textNo : textEn}
     </Typography>
   );
