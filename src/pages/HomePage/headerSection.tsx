@@ -47,7 +47,7 @@ const HeaderSection = () => {
         </RoutingButton>
       </Stack>
       <CardMedia
-        sx={{ height: 540, width: 510, py: {xs: 2}}}
+        sx={{ height: 540, width: {xs:350,sm:510}, py: {xs: 2}}}
         component='iframe'
         src='https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6876623560589283328'
         allowFullScreen

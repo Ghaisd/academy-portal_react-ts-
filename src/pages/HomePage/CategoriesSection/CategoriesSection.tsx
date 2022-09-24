@@ -2,6 +2,7 @@ import { Container, Stack } from '@mui/material';
 import Box from '@mui/material/Box';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { matchRoutes } from 'react-router-dom';
 import { routes } from '../../../App';
 import Text from '../../../Components/Text';
 import RoutingButton from '../../../Components/UI/RoutingButton';
@@ -39,14 +40,12 @@ const CategoriesSection = () => {
         />
       <Stack direction='row' sx={{
         pb:{xs:'4rem'},
-        pl:{xs:'3rem'}
-
       }}>
         <RoutingButton
           sx={{
             bgcolor: 'primary.light',
             width: '10rem',
-            mr: 5   
+            mr: 5
           }}
           to={routes.About}
           >
@@ -56,7 +55,7 @@ const CategoriesSection = () => {
           to={routes.AcademyTV}
           sx={{
             bgcolor: 'primary.light',
-            width: '10rem'
+            width: '10rem',
           }}
           >
           {t('AcademyTV')}

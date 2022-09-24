@@ -4,6 +4,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { Box } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import LanguageIcon from '@mui/icons-material/Language';
 
 export default function LanguageMenu() {
   const { t, i18n } = useTranslation();
@@ -30,7 +31,7 @@ export default function LanguageMenu() {
         onClick={handleClick}
         color='info'
       >
-        {t('Language')}
+        <LanguageIcon/>
       </Button>
       <Menu
         id='basic-menu'

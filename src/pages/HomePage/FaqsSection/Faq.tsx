@@ -30,7 +30,7 @@ const Faq = ({ faq: { headerText, paragraphText } }: FaqProps) => {
   return (
     <Box
       p={4}
-      pb={{xs:8}}
+      pb={{xs:10,sm:3}}
       bgcolor='secondary.main'
       onClick={SetCssClasses}
       display='inline-block'
