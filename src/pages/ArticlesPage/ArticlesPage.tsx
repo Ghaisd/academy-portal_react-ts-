@@ -1,8 +1,9 @@
-import { Box } from '@mui/material';
+import { Stack } from '@mui/material';
 import { ArticleType } from '../../api/api';
 import useArticles from '../../api/hooks/useArticles';
 import Loading from '../../Components/Loading';
 import Article from './Article';
+import articles from '../../data/articles';
 
 const ArticlesPage = () => {
   const { data, error } = useArticles();
@@ -11,14 +12,14 @@ const ArticlesPage = () => {
   return (
     // eslint-disable-next-line react/jsx-no-useless-fragment
     <>
-      {data ? (
-        <Box
-          display='grid'
+      {articles ? (
+        <Stack
+          display={{xs:'block',sm:'grid'}}
           gridTemplateColumns='repeat(3, 1fr)'
           justifyItems='center'
           my={8}
         >
-          {data.map((article: ArticleType) => (
+          {articles.map((article: ArticleType) => (
             <Article
               key={article.Id}
               id={article.Id}
@@ -28,7 +29,7 @@ const ArticlesPage = () => {
               src={article.ArticleImage}
             />
           ))}
-        </Box>
+        </Stack>
       ) : (
         <Loading
           sx={{
