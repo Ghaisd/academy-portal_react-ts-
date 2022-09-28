@@ -1,15 +1,14 @@
 import { Typography , Box } from '@mui/material';
-
 import { useTranslation } from 'react-i18next';
 import { StudentType } from '../../../api/api';
-import useStudents from '../../../api/hooks/useStudents';
 import Loading from '../../../Components/Loading';
 import Student from './Student';
+import students from '../../../data/students';
 
 const StudentsSection = () => {
-  const { data, error } = useStudents();
+  // const { data, error } = useStudents();
   const { t } = useTranslation();
-  if (error) return <h1>{error}</h1>;
+  // if (error) return <h1>{error}</h1>;
   return (
     <>
       <Typography align='center' color='text.primary' variant='h3'>
@@ -17,13 +16,12 @@ const StudentsSection = () => {
       </Typography>
       <Box
         display='grid'
-        gridTemplateColumns='repeat(4, 1fr)'
+        gridTemplateColumns={{sm:'repeat(4, 1fr)'}}
         gap={2}
         my={8}
-        width={50}
       >
-        {data ? (
-          data.map((student: StudentType) => (
+        {students ? (
+          students.map((student: StudentType) => (
             <Student
               key={student.Name}
               src={student.ProfileImage}

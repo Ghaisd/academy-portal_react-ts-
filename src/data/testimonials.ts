@@ -29,6 +29,12 @@ export const testimonialsNo = [
     role: 'Foreleser',
     paragraphText: 'Helt fantastisk å få muligheten til å trene opp så mange deltagere til å bli fullverdige utviklere! En kjempesjanse for deltagerne, og en super ressurs for Ikomm og de deltagende bedriftene.',
   },
+  {
+    image: '/images/avatar6.jpg',
+    name: 'Ghais Dahdouh',
+    role: 'Student 2021',
+    paragraphText: 'En livsendrende mulighet, jeg er veldig takknemlig for Ikomm Academy for hvordan de behandlet oss, og for den gode veiledningen de ga oss som fikk meg til å forelske meg i programmering.',
+  },
 ];
 
 export const testimonialsEn = [
@@ -61,6 +67,12 @@ export const testimonialsEn = [
     name: 'Erik van Appeldoorn',
     role: 'Lecturer',
     paragraphText: 'Absolutely fantastic to have the opportunity to train so many participants to become full-fledged developers! A great chance for the participants, and an enormous resource for Ikomm and the participating companies.',
+  },
+  {
+    image: '/images/avatar6.jpg',
+    name: 'Ghais Dahdouh',
+    role: 'student',
+    paragraphText: 'A life-changing opportunity, I am really grateful for Ikomm academy for how they treated us, and for the great mentoring they provided us which made me fall in love with programming.',
   },
 ];
 

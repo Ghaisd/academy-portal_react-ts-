@@ -21,12 +21,8 @@ const HeaderSection = () => {
     py={{sm:3}}
     justifyContent={{sm:'space-around'}}
     spacing={{sm:40}}
-    sx={{flexGrow: 1, display: { xs: {
-      direction:'column'
-    }}
-    }}
     >
-      <Stack width={{sm:'45%'}} spacing={5} justifyContent={{xs:'center'}} alignContent={{xs:'center'}} py={{xs:1}}>
+      <Stack width={{sm:'45%'}} spacing={{xs:5,sm:3}} justifyContent={{xs:'center'}} alignContent={{xs:'center'}} py={1}>
         <Text
           textNo={headerSectionTextHNo}
           textEn={headerSectionTextHEn}
@@ -40,20 +36,23 @@ const HeaderSection = () => {
           to={routes.Contact}
           sx={{
             bgcolor: 'primary.light',
-            width: {sm:'10rem'}
+            alignSelf: {xs:'center', sm:'inherit'},
+            width: '10rem'
           }}
         >
           {t('JoinUs')}
         </RoutingButton>
       </Stack>
+      <Box display='flex' justifyContent='center'>
       <CardMedia
-        sx={{ height: 540, width: {xs:350,sm:510}, py: {xs: 2}}}
+        sx={{ height: 580, width: {xs:500,sm:510}, py: {xs: 4}}}
         component='iframe'
         src='https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6876623560589283328'
         allowFullScreen
         title='Embedded post'
         frameBorder='none'
         />
+        </Box>
     </Stack>
     </Container>
   );

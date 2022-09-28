@@ -38,10 +38,20 @@ const TestimonialsSection = () => {
         }}
       >
         <Swiper
+         breakpoints={{
+          1: {
+            width: 500,
+            slidesPerView: 1,
+            slidesPerGroup:1
+          },
+          601: {
+            slidesPerView: 2,
+          }
+        }}
           modules={[Navigation, Pagination, Scrollbar, A11y, Virtual]}
           spaceBetween={50}
-          slidesPerView={2}
           navigation
+          slidesPerGroup={2}
           scrollbar={{ draggable: true }}
           pagination={{ clickable: true }}
         >

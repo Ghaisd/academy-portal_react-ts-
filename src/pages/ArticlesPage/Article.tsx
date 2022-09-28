@@ -24,6 +24,8 @@ const Article = ({ src, headline, author, articleContent, id }: props) => {
       width={{sm:420}}
       height={{xs:900}}
       mt={6.25}
+      alignSelf='center'
+      ml={{xs:'10%', sm:'0'}}
       sx={{
         '&:hover': {
           bgcolor: 'transparent',

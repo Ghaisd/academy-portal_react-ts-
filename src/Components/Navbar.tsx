@@ -6,12 +6,8 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Stack } from '@mui/material';
+import { Divider, Stack } from '@mui/material';
 import { t } from 'i18next';
 import RoutingLink from './UI/RoutingLink';
 import { routes } from '../App';
@@ -71,7 +67,7 @@ const ResponsiveAppBar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-           <Stack direction='column' bgcolor='secondary.main' gap={4} p={2}>
+           <Stack direction='column' divider={<Divider sx={{bgcolor: 'white'}} />} bgcolor='secondary.main' gap={2} p={2} >
              <RoutingLink to={routes.Home}>{t('Home')}</RoutingLink>
              <RoutingLink to={routes.Articles}>{t('Articles')}</RoutingLink>
              <RoutingLink to={routes.About}>{t('Participants')}</RoutingLink>

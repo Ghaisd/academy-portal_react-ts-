@@ -1,8 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Typography , Box } from '@mui/material';
-
- import useArticles from '../../api/hooks/useArticles';
+// import useArticles from '../../api/hooks/useArticles';
 import { ArticleType } from '../../api/api';
 import Loading from '../../Components/Loading';
 import articles from '../../data/articles';
@@ -11,7 +10,7 @@ const ArticlePage = () => {
   const { id } = useParams<string>();
   const [article, setArticle] = useState<ArticleType>();
 
-   const { data, error } = useArticles();
+  //  const { data, error } = useArticles();
 
   // const articles = data;
   useEffect(() => {
@@ -57,9 +56,10 @@ const ArticlePage = () => {
           src={article?.AuthorImage}
           width={{xs:70,sm:128}}
           py={{xs:5, sm:0}}
+          borderRadius={5}
         />
         <Box ml={2} textTransform='uppercase'>
-          <Typography color='text.primary' variant='h5' py={2} pt={{xs:6,sm:0}}>
+          <Typography color='text.primary' variant='h5' py={2} pt={{xs:6,sm:2}}>
             {article?.AuthorName}
           </Typography>
           <Typography color='text.primary' variant='subtitle2'>
