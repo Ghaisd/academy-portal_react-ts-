@@ -33,7 +33,7 @@ const ArticlesSection = () => {
           ))}
         </Stack>
       ) : (
-         <Loading sx={{ py: '20vh' }} /> 
+         <Loading sx={{py: '20vh' }} /> 
       )}
     </Box>
   );

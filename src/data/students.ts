@@ -1,4 +1,4 @@
-const students = [
+export const studentsNo = [
   {
     Id: 33466,
     Name: 'Argyro',
@@ -88,4 +88,93 @@ const students = [
   },
 ];
 
-export default students;
+export const studentsEn = [
+  {
+    Id: 33466,
+    Name: 'Argyro',
+    LastName: 'Zaouti',
+    FullName: '',
+    ShortInfo: 'Master\'s degree in infrastructure and technology.\n(The charming troll)',
+    Description: 'Master\'s degree in infrastructure and technology.\n(The charming troll)',
+    Status: 'Progammering student in Ikomm academy',
+    ProfileImage: '/images/iro.png',
+    Github: 'https://github.com/Iro83',
+    Linkedin: 'string',
+  },
+  {
+    Id: 97846,
+    Name: 'Ghais',
+    LastName: 'Dahdouh',
+    FullName: '',
+    ShortInfo: 'Part-time student in programming at NTNU (Leader type).',
+    Description: 'Part-time student in programming at NTNU (Leader type).',
+    Status: 'Progammering student in Ikomm academy',
+    ProfileImage: '/images/GhaisDahdouh.png',
+    Github: 'https://github.com/Ghaisd',
+    Linkedin: 'www.linkedin.com/in/ghais-dahdouh-042308214',
+  },
+  {
+    Id: 41843,
+    Name: 'Khashayar',
+    LastName: 'Nariman',
+    FullName: 'string',
+    ShortInfo:
+      'Experienced hobby programmer, with a long track record in Python.\n(Backend-king)',
+    Description:
+      'Experienced hobby programmer, with a long track record in Python.\n(Backend-king)',
+    ProfileImage: '/images/Khashayar.jpg',
+    Github: 'https://github.com/kkhashayar',
+    Linkedin: 'string',
+  },
+  {
+    Id: 22474,
+    Name: 'Lutpullah',
+    LastName: 'Ekrem',
+    FullName: '',
+    ShortInfo:
+      'Selvlært utvikler og selenium-tester\n(Menneskerettighets\n-forkjemperen). ',
+    Description:
+      'Selvlært utvikler og selenium-tester(Menneskerettighetsforkjemperen). ',
+    Status: 'Progammering student på Ikomm academy',
+    ProfileImage: '/images/Lutpullah.jpg',
+    Github: 'https://github.com/lutpullaekrem',
+    Linkedin: 'A progamming student at Ikomm academy',
+  },
+  {
+    Id: 81285,
+    Name: 'Mohammad',
+    LastName: 'Kellab',
+    ShortInfo: 'Grafisk artist og selvlært utvikler.\n(The Brogrammer)',
+    Description: 'Grafisk artist og selvlært utvikler(The Brogrammer).',
+    Status: 'Progammering student på Ikomm academy',
+    ProfileImage: '/images/Mohammad.jpg',
+    Github: 'https://github.com/medosteve',
+    Linkedin: 'A progamming student at Ikomm academy',
+  },
+  {
+    Id: 74678,
+    Name: 'Steffen',
+    LastName: 'Wold',
+    FullName: '',
+    ShortInfo:
+      'Frontend wizard med over 10 års fartstid i Javascript.\n(Den kreative)',
+    Description:
+      'Frontend wizard med over 10 års fartstid i Javascript(Den kreative).',
+    Status: 'Progammering student på Ikomm academy',
+    ProfileImage: '/images/Steffen4.png',
+    Github: 'https://github.com/Nullcano',
+    Linkedin: 'A progamming student at Ikomm academy',
+  },
+  {
+    Id: 55969,
+    Name: 'Tor',
+    LastName: 'Pettersen',
+    ShortInfo: 'Kode-talent med skyhøyt toppnivå.\n(Problemløseren)',
+    Description: 'Kode-talent med skyhøyt toppnivå(Problemløseren)',
+    Status: 'Progammering student på Ikomm academy',
+    ProfileImage: '/images/Tor.png',
+    Github: 'https://github.com/Tor-A-P',
+    Linkedin: 'A progamming student at Ikomm academy',
+  },
+];
+

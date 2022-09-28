@@ -18,11 +18,11 @@ const Testimonial = ({
   <Container  sx={{
     mr:{xs:'25%',sm:'0'}
   }}>
-  <Box mt={6} flexDirection='column' display='flex' justifyContent='center'>
+  <Box mt={6} flexDirection='column' display='flex' justifyContent='center' mr={{xs:'25%', sm:'0'}}>
     <Avatar
       alt={name}
       src={image}
-      sx={{ width: 84, height: 84, m: '0 auto 1rem' }}
+      sx={{ width: 84, height: 84, m: '0 auto' }}
     />
 
     <Box textAlign='center'>

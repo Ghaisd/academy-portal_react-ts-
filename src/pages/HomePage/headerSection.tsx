@@ -17,7 +17,7 @@ const HeaderSection = () => {
       py: '4rem'
     }}>
     <Stack 
-    direction={{ xs: 'column', sm: 'row' }}
+    direction={{  sm: 'row' }}
     py={{sm:3}}
     justifyContent={{sm:'space-around'}}
     spacing={{sm:40}}

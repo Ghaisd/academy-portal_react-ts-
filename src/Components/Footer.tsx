@@ -22,7 +22,7 @@ const Footer = () => {
                 component='div'
                 sx={{ flexGrow: 1 }}
               >
-                <RoutingLink to='/'>IKOMM ACADEMY</RoutingLink>
+                <RoutingLink isLogo to='/'>IKOMM ACADEMY</RoutingLink>
               </Typography>
               <Typography color='text.primary' variant='subtitle1' pt={1}>
                 Talent finnes overalt for den som leter.

@@ -1,4 +1,4 @@
-import { Typography , Box, Container } from '@mui/material';
+import { Typography , Box, Container, Stack } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
 import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
@@ -10,16 +10,16 @@ const FaqsSection = () => {
   return (
     <Box bgcolor='primary.main' py={2}>
       <Container>
-        <Typography color='text.primary' variant='h3' align='center' my={8}>
+        <Typography color='text.primary' variant='h3' align='center' my={{xs:3, sm:8}}>
           {t('FAQ')}
         </Typography>
-        <Box display='grid' gridTemplateColumns='1fr 1fr' gap={2} pb={4}>
+        <Stack display={{sm:'grid'}} gridTemplateColumns='1fr 1fr' gap={2} pb={{sm:4}}>
           {PickTxtLng<FaqType[]>(faqsNo, faqsEn).map(
             (faq: { headerText: string; paragraphText: string }) => (
               <Faq key={faq.headerText} faq={faq} />
             ),
           )}
-        </Box>
+        </Stack>
       </Container>
     </Box>
   );

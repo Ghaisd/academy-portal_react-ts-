@@ -25,7 +25,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ['Lemonada', 'cursive'].join(','),
+    fontFamily: ['Verdana', 'cursive'].join(','),
     h1: {
       fontSize: '2.5rem',
       fontWeight: 400,

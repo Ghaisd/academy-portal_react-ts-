@@ -3,7 +3,7 @@ import { Avatar, Container, Stack, Typography , Box } from '@mui/material';
 import { routes } from '../../../App';
 import CustomIcon from '../../../Components/UI/InteractiveIcon';
 
-type props = {
+export type props = {
   Name: string;
   src: string;
   smallInfo: string;
@@ -17,7 +17,6 @@ const Student = ({ src, Name, smallInfo, Github, Linkedin }: props) => (
       borderColor: 'secondary.main',
       bgcolor: 'primary.main',
       width: 280,
-      ml: 15,
     }}
   >
     <Avatar
@@ -37,7 +36,7 @@ const Student = ({ src, Name, smallInfo, Github, Linkedin }: props) => (
       <Typography py={2} color='text.primary' variant='h4' align='center' noWrap >
         {Name}
       </Typography>
-      <Typography color='info.main' variant='h6'>
+      <Typography color='info' variant='h6' textAlign='center'>
         {smallInfo}
       </Typography>
     </Box>

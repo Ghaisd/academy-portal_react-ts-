@@ -22,7 +22,7 @@ const Article = ({ src, headline, author, articleContent, id }: props) => {
       gridTemplateRows='auto 1fr auto'
       justifyItems='center'
       width={{sm:420}}
-      height={{xs:900}}
+      height={{xs:'auto', sm:'60rem'}}
       mt={6.25}
       alignSelf='center'
       ml={{xs:'10%', sm:'0'}}

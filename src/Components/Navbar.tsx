@@ -8,13 +8,14 @@ import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Divider, Stack } from '@mui/material';
-import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 import RoutingLink from './UI/RoutingLink';
 import { routes } from '../App';
 import LanguageMenu from './LanguageMenu';
 import HideOnScroll from './UI/HideOnScroll';
 
 const ResponsiveAppBar = () => {
+  const { t } = useTranslation();
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -34,7 +35,7 @@ const ResponsiveAppBar = () => {
               display: { xs: 'none', md: 'flex' },
             }}
           >
-           <RoutingLink to='/'>IKOMM ACADEMY</RoutingLink>
+           <RoutingLink isLogo  to='/'>IKOMM ACADEMY</RoutingLink>
            <LanguageMenu />
           </Typography>
 
@@ -67,7 +68,7 @@ const ResponsiveAppBar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-           <Stack direction='column' divider={<Divider sx={{bgcolor: 'white'}} />} bgcolor='secondary.main' gap={2} p={2} >
+           <Stack direction='column' divider={<Divider sx={{bgcolor: 'white'}} />} bgcolor='secondary.main' gap={2} p={2}  >
              <RoutingLink to={routes.Home}>{t('Home')}</RoutingLink>
              <RoutingLink to={routes.Articles}>{t('Articles')}</RoutingLink>
              <RoutingLink to={routes.About}>{t('Participants')}</RoutingLink>
@@ -85,7 +86,7 @@ const ResponsiveAppBar = () => {
               letterSpacing: '.3rem',
             }}
           >
-            <RoutingLink to='/'>IKOMM ACADEMY</RoutingLink>
+            <RoutingLink isLogo to='/'>IKOMM ACADEMY</RoutingLink>
             <LanguageMenu />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
