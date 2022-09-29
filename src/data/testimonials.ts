@@ -1,9 +1,9 @@
 export const testimonialsNo = [
   {
-    image: '/images/avatar1.png',
-    name: 'Tor André Pettersen',
+    image: '/images/avatar1.jpg',
+    name: 'Ghais Dahdouh',
     role: 'Student 2022',
-    paragraphText: 'Det er et skikkelig tøft kurs, med utrolig mye man skal lære på utrolig kort tid, men bare man kommer seg gjennom det, har man lært seg fantastisk mye, skaffet seg nye venner, kontakter i flere IT-selskap, og lært om hvordan det er å jobbe som utvikler! Ekstremt lærerikt kurs!',
+    paragraphText: 'En livsendrende mulighet, jeg er veldig takknemlig for Ikomm Academy for hvordan de behandlet oss, og for den gode veiledningen de ga oss som fikk meg til å forelske meg i programmering.',
   },
   {
     image: '/images/avatar2.png',
@@ -30,19 +30,20 @@ export const testimonialsNo = [
     paragraphText: 'Helt fantastisk å få muligheten til å trene opp så mange deltagere til å bli fullverdige utviklere! En kjempesjanse for deltagerne, og en super ressurs for Ikomm og de deltagende bedriftene.',
   },
   {
-    image: '/images/avatar6.jpg',
-    name: 'Ghais Dahdouh',
-    role: 'Student 2021',
-    paragraphText: 'En livsendrende mulighet, jeg er veldig takknemlig for Ikomm Academy for hvordan de behandlet oss, og for den gode veiledningen de ga oss som fikk meg til å forelske meg i programmering.',
+    image: '/images/avatar6.png',
+    name: 'Tor André Pettersen',
+    role: 'Student 2022',
+    paragraphText: 'Det er et skikkelig tøft kurs, med utrolig mye man skal lære på utrolig kort tid, men bare man kommer seg gjennom det, har man lært seg fantastisk mye, skaffet seg nye venner, kontakter i flere IT-selskap, og lært om hvordan det er å jobbe som utvikler! Ekstremt lærerikt kurs!',
   },
+ 
 ];
 
 export const testimonialsEn = [
   {
-    image: '/images/avatar1.png',
-    name: 'Tor André Pettersen',
-    role: 'Student 2022',
-    paragraphText: 'It is a really tough course, with an incredible amount to learn in an incredibly short time, but as long as you get through it, you have learned a fantastic amount, made new friends, made contacts in several IT companies, and learned about how working as a developer is! Extremely educational course!',
+    image: '/images/avatar1.jpg',
+    name: 'Ghais Dahdouh',
+    role: 'student 2022',
+    paragraphText: 'A life-changing opportunity, I am really grateful for Ikomm academy for how they treated us, and for the great mentoring they provided us which made me fall in love with programming.',
   },
   {
     image: '/images/avatar2.png',
@@ -69,10 +70,10 @@ export const testimonialsEn = [
     paragraphText: 'Absolutely fantastic to have the opportunity to train so many participants to become full-fledged developers! A great chance for the participants, and an enormous resource for Ikomm and the participating companies.',
   },
   {
-    image: '/images/avatar6.jpg',
-    name: 'Ghais Dahdouh',
-    role: 'student',
-    paragraphText: 'A life-changing opportunity, I am really grateful for Ikomm academy for how they treated us, and for the great mentoring they provided us which made me fall in love with programming.',
+    image: '/images/avatar6.png',
+    name: 'Tor André Pettersen',
+    role: 'Student 2022',
+    paragraphText: 'It is a really tough course, with an incredible amount to learn in an incredibly short time, but as long as you get through it, you have learned a fantastic amount, made new friends, made contacts in several IT companies, and learned about how working as a developer is! Extremely educational course!',
   },
 ];
 

@@ -65,7 +65,7 @@ const ResponsiveAppBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: {  md: 'none' },
               }}
             >
            <Stack direction='column' divider={<Divider sx={{bgcolor: 'white'}} />} bgcolor='secondary.main' gap={2} p={2}  >
@@ -90,7 +90,7 @@ const ResponsiveAppBar = () => {
             <LanguageMenu />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
-             <Stack direction='row' spacing={7} pl={80}>
+             <Stack onClick={handleCloseNavMenu}  direction='row' spacing={7} pl={80}>
              <RoutingLink
               to={routes.Home}>{t('Home')}</RoutingLink>
              <RoutingLink to={routes.Articles}>{t('Articles')}</RoutingLink>

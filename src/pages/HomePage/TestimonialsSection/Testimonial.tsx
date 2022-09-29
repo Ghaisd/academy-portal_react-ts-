@@ -15,10 +15,9 @@ export type TestimonialProps = {
 const Testimonial = ({
   testimonial: { name, image, role, paragraphText },
 }: TestimonialProps) => (
-  <Container  sx={{
-    mr:{xs:'25%',sm:'0'}
-  }}>
-  <Box mt={6} flexDirection='column' display='flex' justifyContent='center' mr={{xs:'25%', sm:'0'}}>
+  <Container >
+  
+  <Box mt={6} flexDirection='column' display='flex' justifyContent='center' mr={{xs:'22%', sm:'0'}}>
     <Avatar
       alt={name}
       src={image}
@@ -39,7 +38,7 @@ const Testimonial = ({
         {role}
       </Typography>
     </Box>
-    <Box bgcolor='secondary.main' p={4} borderRadius={5}>
+    <Box bgcolor='secondary.main' p={4} borderRadius={5} > 
       <Typography color='text.primary' variant='subtitle2'>
         {paragraphText}
       </Typography>
