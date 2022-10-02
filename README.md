@@ -1,4 +1,17 @@
 # Introduction
 - To see the deployed version: https://ikomm-academy.web.app/
 - This is a case-study project for Ikomm academy which I created during my time there as a programming student.
-- It is a front-end project which describe The academy: (process, Faqs, students, achievements, etc...). 
+
+
+##  :beginner: About
+- It is a front-end project which describes The academy: (process, Faqs, students, achievements, etc...)
+- Ever since I created it I kept imporving it as time goes by (Added typescript, used Material UI, added 2 languages options, mobile responsivity and more features).
+
+###  :electric_plug: Installation
+```
+Make sure you have nodejs installed.
+Run npm install.
+Run npm start to run the website
+```
+###  :package: Commands
+- Run npm start to run the website
