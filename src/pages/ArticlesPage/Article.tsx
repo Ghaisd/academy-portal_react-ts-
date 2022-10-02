@@ -21,8 +21,11 @@ const Article = ({ src, headline, author, articleContent, id }: props) => {
       display='grid'
       gridTemplateRows='auto 1fr auto'
       justifyItems='center'
-      width={420}
+      width={{sm:420}}
+      height={{xs:'`auto`', sm:'60rem'}}
       mt={6.25}
+      alignSelf='center'
+      ml={{xs:'10%', sm:'0'}}
       sx={{
         '&:hover': {
           bgcolor: 'transparent',

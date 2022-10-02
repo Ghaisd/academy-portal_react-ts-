@@ -1,51 +1,39 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { Box , Typography } from '@mui/material';
+import { Box , Stack, Typography } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
 import RoutingButton from '../../../Components/UI/RoutingButton';
 import CustomIcon from '../../../Components/UI/InteractiveIcon';
-import useStudents from '../../../api/hooks/useStudents';
 import { StudentType } from '../../../api/api';
-import Loading from '../../../Components/Loading';
+import {studentsNo, studentsEn} from '../../../data/students';
+import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
 
 const StudentPage = () => {
   const {t} = useTranslation();
   const { id } = useParams<string>();
   const [student, setStudent] = useState<StudentType>();
+  const individualStudent: StudentType | undefined = PickTxtLng(studentsNo, studentsEn).find((x) => x.Name === id)
 
-  const { data, error } = useStudents();
-
-  const students = data;
   useEffect(() => {
-    if (students) {
-      const individualStudent: StudentType | undefined = students.find(
-        (x) => x.Name === id,
-      );
-      if (individualStudent) {
-        setStudent(individualStudent);
-      }
-    }
-  }, [id, students, setStudent, student]);
-  if (error) return <h1>{error}</h1>;
-  if (!data) {
-    return (
-      <Loading
-        sx={{
-          py: '50vh',
-        }}
-      />
-    );
-  }
+      setStudent(individualStudent);
+  }, [individualStudent]);
   return (
-    <Box
-      py={40}
-      display='flex'
+      <Stack
+      direction={{sm:'row-reverse'}}
+      py={{xs:10, sm:30}}
       alignItems='center'
       justifyContent='center'
-      gap={14}
-    >
-      <Box>
+      gap={10}
+      >
+      <Box
+      component='img'
+      borderRadius={20}
+      alt='ProfilePic'
+      width={400}
+      src={student?.ProfileImage}
+      />
+      <Box textAlign={{xs:'center', sm:'inherit'}}>
         <Typography color='#f75023' variant='h4'>
           Hallo, jeg er
         </Typography>
@@ -72,19 +60,13 @@ const StudentPage = () => {
             bgcolor: 'warning.main',
           }}
           to='#'
-        >
+          >
           {t('DownloadCV')}
         </RoutingButton>
       </Box>
-      <Box
-        component='img'
-        borderRadius={20}
-        alt='ProfilePic'
-        width={400}
-        src={student?.ProfileImage}
-      />
-    </Box>
-  );
-};
+     
+     </Stack>
+     );
+    };
 
 export default StudentPage;

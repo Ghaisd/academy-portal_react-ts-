@@ -29,7 +29,8 @@ const Faq = ({ faq: { headerText, paragraphText } }: FaqProps) => {
   };
   return (
     <Box
-      p={4}
+      p={{xs:2,sm:4}}
+      pb={{xs:1, sm:3}}
       bgcolor='secondary.main'
       onClick={SetCssClasses}
       display='inline-block'
@@ -46,7 +47,7 @@ const Faq = ({ faq: { headerText, paragraphText } }: FaqProps) => {
       <i className={faqIcon} />
       <Typography
         display='inline-block'
-        ml={1}
+        ml={{xs:2,sm:1}}
         variant='h6'
         color='text.primary'
       >

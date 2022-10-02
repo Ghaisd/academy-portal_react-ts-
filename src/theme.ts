@@ -25,10 +25,50 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ['Lemonada', 'cursive'].join(','),
-    body1: {
-      color: '#fff',
+    fontFamily: ['Verdana', 'cursive'].join(','),
+    h1: {
+      fontSize: '2.5rem',
+      fontWeight: 400,
+      letterSpacing: 'normal',
+      lineHeight: '3rem',
     },
+    h2: {
+      fontSize: '2rem',
+      fontWeight: 400,
+      letterSpacing: 'normal',
+      lineHeight: '3rem',
+    },
+    h3: {
+      fontSize: '1.75rem',
+      fontWeight: 500,
+      letterSpacing: 'normal',
+      lineHeight: '1.5rem',
+    },
+    h4: {
+      fontSize: '1.5rem',
+      fontWeight: 500,
+      letterSpacing: 'normal',
+      lineHeight: '1.5rem',
+    },
+    h5: {
+      fontSize: '1.25rem',
+      fontWeight: 500,
+      letterSpacing: 'normal',
+      lineHeight: '1.5rem',
+    },
+    h6: {
+      fontSize: '1rem',
+      fontWeight: 500,
+      letterSpacing: 'normal',
+      lineHeight: '1.5rem',
+    },
+    body1: {
+      fontSize: '1.5rem',
+      fontWeight: 500,
+      letterSpacing: 'normal',
+      lineHeight: '2.5rem',
+
+    }
   },
 });
 

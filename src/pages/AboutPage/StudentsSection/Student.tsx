@@ -3,7 +3,7 @@ import { Avatar, Container, Stack, Typography , Box } from '@mui/material';
 import { routes } from '../../../App';
 import CustomIcon from '../../../Components/UI/InteractiveIcon';
 
-type props = {
+export type props = {
   Name: string;
   src: string;
   smallInfo: string;
@@ -15,17 +15,16 @@ const Student = ({ src, Name, smallInfo, Github, Linkedin }: props) => (
     sx={{
       border: 10,
       borderColor: 'secondary.main',
-      bgcolor: 'primary.light',
+      bgcolor: 'primary.main',
       width: 280,
-      ml: 15,
     }}
   >
     <Avatar
       alt='student'
       src={src}
-      sx={{ width: 200, height: 200, mx: 'auto' }}
+      sx={{ width: 200, height: 200, mx: 'auto'}}
     />
-    <Stack direction='row' mx='auto' my={1}>
+    <Stack direction='row' mx='auto' my={1} pl={3}>
       <CustomIcon
         href={`${routes.About}/${Name}`}
         iconType='bi bi-file-earmark-person'
@@ -34,10 +33,10 @@ const Student = ({ src, Name, smallInfo, Github, Linkedin }: props) => (
       <CustomIcon href={Github} iconType='bi bi-github' />
     </Stack>
     <Box>
-      <Typography py={2} color='text.primary' variant='h4' align='center'>
+      <Typography py={2} color='text.primary' variant='h4' align='center' noWrap >
         {Name}
       </Typography>
-      <Typography color='info.main' variant='h6'>
+      <Typography color='info' variant='h6' textAlign='center'>
         {smallInfo}
       </Typography>
     </Box>

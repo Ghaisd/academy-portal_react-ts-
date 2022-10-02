@@ -1,4 +1,4 @@
-import { Avatar, Typography , Box } from '@mui/material';
+import { Avatar, Typography , Box, Container } from '@mui/material';
 
 
 export type TestimonialType = {
@@ -15,11 +15,13 @@ export type TestimonialProps = {
 const Testimonial = ({
   testimonial: { name, image, role, paragraphText },
 }: TestimonialProps) => (
-  <Box mt={6}>
+  <Container >
+  
+  <Box mt={6} flexDirection='column' display='flex' justifyContent='center' mr={{xs:'22%', sm:'0'}}>
     <Avatar
-      alt='Remy Sharp'
+      alt={name}
       src={image}
-      sx={{ width: 84, height: 84, m: '0 auto 1rem' }}
+      sx={{ width: 84, height: 84, m: '0 auto' }}
     />
 
     <Box textAlign='center'>
@@ -36,12 +38,13 @@ const Testimonial = ({
         {role}
       </Typography>
     </Box>
-    <Box bgcolor='secondary.main' p={4} borderRadius={5}>
+    <Box bgcolor='secondary.main' p={4} borderRadius={5} > 
       <Typography color='text.primary' variant='subtitle2'>
         {paragraphText}
       </Typography>
     </Box>
   </Box>
+  </Container>
 );
 
 export default Testimonial;

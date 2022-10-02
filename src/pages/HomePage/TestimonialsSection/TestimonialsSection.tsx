@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Virtual } from 'swiper';
-import { Container , Typography } from '@mui/material';
+import { Container , Stack, Typography } from '@mui/material';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -13,8 +13,8 @@ import { testimonialsEn, testimonialsNo } from '../../../data/testimonials';
 const TestimonialsSection = () => {
   const { t } = useTranslation();
   return (
-    <>
-      <Typography color='text.primary' variant='h3' align='center' pt={8}>
+    <Stack justifyContent='center' alignItems='center'>
+      <Typography color='text.primary' variant='h3' pt={8}>
         {t('Testimonials')}
       </Typography>
       <Container
@@ -33,15 +33,25 @@ const TestimonialsSection = () => {
             bgcolor: 'primary.light',
             color: '#000',
             p: 0.5,
-            pr: 1.3,
+            px: -10
           },
         }}
       >
         <Swiper
+         breakpoints={{
+          1: {
+            width: 500,
+            slidesPerView: 1,
+            slidesPerGroup:1
+          },
+          601: {
+            slidesPerView: 2,
+          }
+        }}
           modules={[Navigation, Pagination, Scrollbar, A11y, Virtual]}
           spaceBetween={50}
-          slidesPerView={2}
           navigation
+          slidesPerGroup={2}
           scrollbar={{ draggable: true }}
           pagination={{ clickable: true }}
         >
@@ -54,7 +64,7 @@ const TestimonialsSection = () => {
           )}
         </Swiper>
       </Container>
-    </>
+    </Stack>
   );
 };
 

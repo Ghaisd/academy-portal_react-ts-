@@ -14,7 +14,7 @@ const Footer = () => {
     py={{xs:5}}
     bgcolor='primary.main' >
       <Container maxWidth='lg'>
-        <Grid container spacing={20}>
+        <Grid container spacing={5}>
             <Grid item xs={12} sm = {4}>
               <Typography
                 color='text.primary'
@@ -22,7 +22,7 @@ const Footer = () => {
                 component='div'
                 sx={{ flexGrow: 1 }}
               >
-                <RoutingLink to='/'>IKOMM ACADEMY</RoutingLink>
+                <RoutingLink isLogo to='/'>IKOMM ACADEMY</RoutingLink>
               </Typography>
               <Typography color='text.primary' variant='subtitle1' pt={1}>
                 Talent finnes overalt for den som leter.

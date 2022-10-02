@@ -14,14 +14,14 @@ const AchievementsSection = () => {
   const { t } = useTranslation();
   return (
     <Container maxWidth='xl'>
-      <Box display='flex'>
+      <Box display='flex' flexDirection={{xs:'column', sm:'row'}}>
         <Box
           component='img'
           alt='achievement'
           src='/images/about_achievements.svg'
         />
         <Box>
-          <Typography color='text.primary' variant='h3'>
+          <Typography color='text.primary' variant='h3' pt={2}>
             {t('Achievements')}
           </Typography>
           <Text

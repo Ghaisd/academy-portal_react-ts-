@@ -1,18 +1,18 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Typography , Box } from '@mui/material';
-
-import useArticles from '../../api/hooks/useArticles';
+// import useArticles from '../../api/hooks/useArticles';
 import { ArticleType } from '../../api/api';
 import Loading from '../../Components/Loading';
+import articles from '../../data/articles';
 
 const ArticlePage = () => {
   const { id } = useParams<string>();
   const [article, setArticle] = useState<ArticleType>();
 
-  const { data, error } = useArticles();
+  //  const { data, error } = useArticles();
 
-  const articles = data;
+  // const articles = data;
   useEffect(() => {
     if (articles) {
       const individualArticle: ArticleType | undefined = articles.find(
@@ -22,9 +22,9 @@ const ArticlePage = () => {
         setArticle(individualArticle);
       }
     }
-  }, [id, articles, setArticle]);
-  if (error) return <h1>{error}</h1>;
-  if (!data) {
+  }, [id]);
+  // if (error) return <h1>{error}</h1>;
+  if (!articles) {
     return (
       <Loading
         sx={{
@@ -37,9 +37,9 @@ const ArticlePage = () => {
     <>
       <Box
         component='img'
-        height={768}
+        height={{xs:330,sm:768}}
         display='block'
-        my={8}
+        my={6}
         mx='auto'
         alt='Article'
         src={article?.ArticleImage}
@@ -54,10 +54,12 @@ const ArticlePage = () => {
           component='img'
           alt='Article'
           src={article?.AuthorImage}
-          width={128}
+          width={{xs:70,sm:128}}
+          py={{xs:5, sm:0}}
+          borderRadius={5}
         />
         <Box ml={2} textTransform='uppercase'>
-          <Typography color='text.primary' variant='h5' py={2}>
+          <Typography color='text.primary' variant='h5' py={2} pt={{xs:6,sm:2}}>
             {article?.AuthorName}
           </Typography>
           <Typography color='text.primary' variant='subtitle2'>
