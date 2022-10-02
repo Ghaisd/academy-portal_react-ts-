@@ -8,10 +8,8 @@
 - Ever since I created it I kept imporving it as time goes by (Added typescript, used Material UI, added 2 languages options, mobile responsivity and more features).
 
 ###  :electric_plug: Installation
+Make sure you have nodejs installed then:
 ```
-Make sure you have nodejs installed.
-Run npm install.
-Run npm start to run the website
+npm install
+npm start
 ```
-###  :package: Commands
-- Run npm start to run the website
