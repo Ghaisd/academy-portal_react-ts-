@@ -20,7 +20,7 @@ const Student = ({ src, Name, smallInfo, Github, Linkedin }: props) => (
     }}
   >
     <Avatar
-      alt='student'
+      alt={Name}
       src={src}
       sx={{ width: 200, height: 200, mx: 'auto'}}
     />

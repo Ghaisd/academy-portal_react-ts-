@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Typography , Box } from '@mui/material';
-// import useArticles from '../../api/hooks/useArticles';
 import { ArticleType } from '../../api/api';
 import Loading from '../../Components/Loading';
 import articles from '../../data/articles';
@@ -10,9 +9,6 @@ const ArticlePage = () => {
   const { id } = useParams<string>();
   const [article, setArticle] = useState<ArticleType>();
 
-  //  const { data, error } = useArticles();
-
-  // const articles = data;
   useEffect(() => {
     if (articles) {
       const individualArticle: ArticleType | undefined = articles.find(
@@ -23,7 +19,6 @@ const ArticlePage = () => {
       }
     }
   }, [id]);
-  // if (error) return <h1>{error}</h1>;
   if (!articles) {
     return (
       <Loading

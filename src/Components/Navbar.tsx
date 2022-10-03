@@ -21,7 +21,7 @@ const ResponsiveAppBar = () => {
     setAnchorElNav(event.currentTarget);
   };
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+    setTimeout(() => setAnchorElNav(null),100 )
   };
 
   return (
@@ -68,7 +68,7 @@ const ResponsiveAppBar = () => {
                 display: {  md: 'none' },
               }}
             >
-           <Stack direction='column' divider={<Divider sx={{bgcolor: 'white'}} />} bgcolor='secondary.main' gap={2} p={2}  >
+           <Stack onClick={handleCloseNavMenu} direction='column' divider={<Divider sx={{bgcolor: 'white'}} />} bgcolor='secondary.main' gap={2} p={2}  >
              <RoutingLink to={routes.Home}>{t('Home')}</RoutingLink>
              <RoutingLink to={routes.Articles}>{t('Articles')}</RoutingLink>
              <RoutingLink to={routes.About}>{t('Participants')}</RoutingLink>
@@ -90,7 +90,7 @@ const ResponsiveAppBar = () => {
             <LanguageMenu />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
-             <Stack onClick={handleCloseNavMenu}  direction='row' spacing={7} pl={80}>
+             <Stack direction='row' spacing={7} pl={80}>
              <RoutingLink
               to={routes.Home}>{t('Home')}</RoutingLink>
              <RoutingLink to={routes.Articles}>{t('Articles')}</RoutingLink>

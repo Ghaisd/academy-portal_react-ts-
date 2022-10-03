@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Box , Stack, Typography } from '@mui/material';
-
 import { useTranslation } from 'react-i18next';
 import RoutingButton from '../../../Components/UI/RoutingButton';
 import CustomIcon from '../../../Components/UI/InteractiveIcon';
@@ -14,10 +13,11 @@ const StudentPage = () => {
   const { id } = useParams<string>();
   const [student, setStudent] = useState<StudentType>();
   const individualStudent: StudentType | undefined = PickTxtLng(studentsNo, studentsEn).find((x) => x.Name === id)
-
+ 
   useEffect(() => {
       setStudent(individualStudent);
   }, [individualStudent]);
+ 
   return (
       <Stack
       direction={{sm:'row-reverse'}}

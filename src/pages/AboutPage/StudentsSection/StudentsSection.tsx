@@ -6,9 +6,8 @@ import { studentsEn, studentsNo } from '../../../data/students';
 import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
 
 const StudentsSection = () => {
-  // const { data, error } = useStudents();
   const { t } = useTranslation();
-  // if (error) return <h1>{error}</h1>;
+  
   return (
     <>
       <Typography align='center' color='text.primary' variant='h3'>

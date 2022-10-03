@@ -1,7 +1,9 @@
 import { Typography , Box } from '@mui/material';
-
 import { useTranslation } from 'react-i18next';
+import { images } from '../../constants';
 import CustomIcon from '../../Components/UI/InteractiveIcon';
+
+const {contact} = images;
 
 const ContactBoard = () => {
   const { t } = useTranslation();
@@ -9,7 +11,7 @@ const ContactBoard = () => {
     <Box bgcolor='secondary.main' pl={15}>
       <Box
         component='img'
-        src='/images/contact.svg'
+        src={contact}
         alt='Contact'
         width='300px'
       />

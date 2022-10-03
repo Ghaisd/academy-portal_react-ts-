@@ -1,15 +1,14 @@
 import { Typography , Box, Stack } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { ArticleType } from '../../api/api';
-// import useArticles from '../../api/hooks/useArticles';
 import Loading from '../../Components/Loading';
 import Article from '../ArticlesPage/Article';
 import articles from '../../data/articles';
 
+
 const ArticlesSection = () => {
-  // const { data, error } = useArticles();
   const { t } = useTranslation();
-  // if (error) return <h1>{error}</h1>;
+  
     return (
     <Box py={10} >
       <Typography color='text.primary' variant='h3' align='center'>
