@@ -1,12 +1,13 @@
 import { Box, Container , Typography } from '@mui/material';
-
 import { useTranslation } from 'react-i18next';
+import { images } from '../../../constants';
 import { staticTextAboutNo, staticTextAboutEn } from '../../../data/staticText';
 import Achievement, { AchievementType } from './Achievement';
 import Text from '../../../Components/Text';
 import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
 import { achievementsEn, achievementsNo } from '../../../data/achievements';
 
+const {aboutAchievements} = images;
 const { achievementsSectionTextPNo } = staticTextAboutNo;
 const { achievementsSectionTextPEn } = staticTextAboutEn;
 
@@ -18,7 +19,7 @@ const AchievementsSection = () => {
         <Box
           component='img'
           alt='achievement'
-          src='/images/about_achievements.svg'
+          src= {aboutAchievements}
         />
         <Box>
           <Typography color='text.primary' variant='h3' pt={2}>

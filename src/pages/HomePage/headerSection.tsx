@@ -1,6 +1,6 @@
 import { CardMedia , Box, Stack, Container } from '@mui/material';
-
 import { useTranslation } from 'react-i18next';
+import videos from '../../data/videos';
 import { routes } from '../../App';
 import Text from '../../Components/Text';
 import RoutingButton from '../../Components/UI/RoutingButton';
@@ -47,7 +47,7 @@ const HeaderSection = () => {
       <CardMedia
         sx={{ height: 580, width: {xs:500,sm:510}, py: {xs: 4}}}
         component='iframe'
-        src='https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6876623560589283328'
+        src={videos[0].link}
         allowFullScreen
         title='Embedded post'
         frameBorder='none'

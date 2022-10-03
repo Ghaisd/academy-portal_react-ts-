@@ -1,9 +1,11 @@
 import { Box, Container , Grid, Typography } from '@mui/material';
-
 import { useTranslation } from 'react-i18next';
+import { images } from '../constants';
 import RoutingLink from './UI/RoutingLink';
 import CustomIcon from './UI/InteractiveIcon';
 import { routes } from '../App';
+
+const { logoTransparentWhite } = images
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -29,7 +31,7 @@ const Footer = () => {
               </Typography>
               <Box
                 component='img'
-                src='/images/Logo_Transparent_hvit.png'
+                src={logoTransparentWhite}
                 alt='logo'
                 mt={6}
                 width={0.8}
