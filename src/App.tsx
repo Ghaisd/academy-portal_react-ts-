@@ -1,18 +1,10 @@
-/* eslint-disable react/jsx-no-constructed-context-values */
 import { ThemeProvider } from '@mui/material/styles';
 import { Route, Routes } from 'react-router-dom';
-import Footer from './Components/Footer';
-import Navbar from './Components/Navbar';
-import useScrollToTop from './hooks/UseScrollToTop';
-import AcademyTVPage from './pages/AcademyTVPage/AcademyTVPage';
-import ArticlesPage from './pages/ArticlesPage/ArticlesPage';
-import ContactPage from './pages/ContactPage/ContactPage';
-import ArticlePage from './pages/ArticlesPage/ArticlePage';
-import AboutPage from './pages/AboutPage/AboutPage';
-import StudentPage from './pages/AboutPage/StudentsSection/StudentPage';
-import ErrorPage from './pages/ErrorPage';
-import HomePage from './pages/HomePage/HomePage';
-import theme from './theme';
+import {Navbar,Footer} from './Components'
+import {AboutPage, AcademyTVPage, ArticlesPage, ContactPage, 
+  ArticlePage, HomePage, ErrorPage, StudentPage} from './pages';
+  import theme from './theme';
+  import useScrollToTop from './hooks/UseScrollToTop';
 
 export const routes = {
   Home: '/Home',

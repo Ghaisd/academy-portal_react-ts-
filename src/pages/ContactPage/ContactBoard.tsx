@@ -1,7 +1,7 @@
 import { Typography , Box } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { images } from '../../constants';
-import CustomIcon from '../../Components/UI/InteractiveIcon';
+import {InteractiveIcon} from '../../Components';
 
 const {contact} = images;
 
@@ -21,11 +21,11 @@ const ContactBoard = () => {
       <Typography color='text.primary' variant='h6'>
         {t('ContactUsForMoreInfo')}
       </Typography>
-      <CustomIcon
+      <InteractiveIcon
         href='https://www.facebook.com/ikommas/'
         iconType='bi bi-facebook'
       />
-      <CustomIcon
+      <InteractiveIcon
         href='https://linkedin.com/company/ikomm'
         iconType='bi bi-linkedin'
       />

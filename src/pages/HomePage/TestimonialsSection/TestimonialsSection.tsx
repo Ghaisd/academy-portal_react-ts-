@@ -1,14 +1,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Virtual } from 'swiper';
-import { Container , Stack, Typography } from '@mui/material';
-
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { Container , Stack, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import Testimonial, { TestimonialType } from './Testimonial';
 import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
-import { testimonialsEn, testimonialsNo } from '../../../data/testimonials';
+import { testimonialsEn, testimonialsNo } from '../../../data';
 
 const TestimonialsSection = () => {
   const { t } = useTranslation();

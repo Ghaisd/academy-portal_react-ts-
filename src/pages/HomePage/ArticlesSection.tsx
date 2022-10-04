@@ -1,7 +1,7 @@
 import { Typography , Box, Stack } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { ArticleType } from '../../api/api';
-import Loading from '../../Components/Loading';
+import {Loading} from '../../Components';
 import Article from '../ArticlesPage/Article';
 import articles from '../../data/articles';
 

@@ -2,8 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Typography , Box } from '@mui/material';
 import { ArticleType } from '../../api/api';
-import Loading from '../../Components/Loading';
-import articles from '../../data/articles';
+import {articles} from '../../data';
 
 const ArticlePage = () => {
   const { id } = useParams<string>();
@@ -19,15 +18,7 @@ const ArticlePage = () => {
       }
     }
   }, [id]);
-  if (!articles) {
-    return (
-      <Loading
-        sx={{
-          py: '50vh',
-        }}
-      />
-    );
-  }
+  
   return (
     <>
       <Box

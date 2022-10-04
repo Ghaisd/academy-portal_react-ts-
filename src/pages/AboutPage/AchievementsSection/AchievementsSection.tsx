@@ -1,11 +1,10 @@
 import { Box, Container , Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { images } from '../../../constants';
-import { staticTextAboutNo, staticTextAboutEn } from '../../../data/staticText';
 import Achievement, { AchievementType } from './Achievement';
 import Text from '../../../Components/Text';
 import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
-import { achievementsEn, achievementsNo } from '../../../data/achievements';
+import {staticTextAboutNo, staticTextAboutEn, achievementsEn, achievementsNo } from '../../../data';
 
 const {aboutAchievements} = images;
 const { achievementsSectionTextPNo } = staticTextAboutNo;

@@ -16,7 +16,7 @@ const Achievement = ({
 }: AchievementProps) => (
   <Box
     bgcolor='primary.main'
-    p={1.6}
+    p={2.6}
     borderRadius={4}
     textAlign='center'
     sx={{
@@ -25,7 +25,7 @@ const Achievement = ({
         p: 1,
         borderRadius: 2,
         display: 'inline-block',
-        mb: 2,
+        mb: 1,
         fontSize: 32,
       },
     }}

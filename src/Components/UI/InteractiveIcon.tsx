@@ -5,7 +5,7 @@ type props = {
   iconType: string;
 };
 
-const CustomIcon = ({ href, iconType }: props) => (
+const InteractiveIcon = ({ href, iconType }: props) => (
   <Link
     ml={2}
     color='text.primary'
@@ -23,4 +23,4 @@ const CustomIcon = ({ href, iconType }: props) => (
   </Link>
 );
 
-export default CustomIcon;
+export default InteractiveIcon;

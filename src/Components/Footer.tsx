@@ -1,9 +1,8 @@
 import { Box, Container , Grid, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { images } from '../constants';
-import RoutingLink from './UI/RoutingLink';
-import CustomIcon from './UI/InteractiveIcon';
 import { routes } from '../App';
+import {RoutingLink, InteractiveIcon} from '.';
 
 const { logoTransparentWhite } = images
 
@@ -13,16 +12,15 @@ const Footer = () => {
     <footer>
     <Box 
     px={{xs:3,sm:10}}
-    py={{xs:5}}
+    py={5}
     bgcolor='primary.main' >
       <Container maxWidth='lg'>
         <Grid container spacing={5}>
-            <Grid item xs={12} sm = {4}>
+            <Grid item xs={12} sm={4}>
               <Typography
                 color='text.primary'
                 variant='h5'
                 component='div'
-                sx={{ flexGrow: 1 }}
               >
                 <RoutingLink isLogo to='/'>IKOMM ACADEMY</RoutingLink>
               </Typography>
@@ -66,11 +64,11 @@ const Footer = () => {
                 academy@ikomm.no
               </Typography>
               <Box>
-                <CustomIcon
+                <InteractiveIcon
                   href='https://www.facebook.com/ikommas/'
                   iconType='bi bi-facebook'
                 />
-                <CustomIcon
+                <InteractiveIcon
                   href='https://linkedin.com/company/ikomm'
                   iconType='bi bi-linkedin'
                 />
@@ -78,7 +76,7 @@ const Footer = () => {
             </Box>
             </Grid>
             </Grid>
-            <Box textAlign='center' pt={{sm:5,xs:5}} mb={{sm:-5,xs:-5}}
+            <Box textAlign='center' pt={5} mb={-5}
             >
                <Typography
           color='text.primary'
@@ -89,9 +87,7 @@ const Footer = () => {
           Copyright &copy;{new Date().getFullYear()} IKOMM-ACADEMY
         </Typography>
             </Box>
-          </Container>
-
-          
+          </Container>   
     </Box>
     </footer>
   );

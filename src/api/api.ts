@@ -19,4 +19,5 @@ export type StudentType = {
   ShortInfo: string;
   Github: string;
   Linkedin: string;
+  CV?: string
 };
