@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 const videos = [
   {
     id: 'Header_Video',

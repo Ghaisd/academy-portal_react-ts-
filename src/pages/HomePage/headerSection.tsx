@@ -1,10 +1,8 @@
 import { CardMedia , Box, Stack, Container } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import videos from '../../data/videos';
+import {videos, staticTextHomeNo, staticTextHomeEn} from '../../data';
 import { routes } from '../../App';
-import Text from '../../Components/Text';
-import RoutingButton from '../../Components/UI/RoutingButton';
-import { staticTextHomeNo, staticTextHomeEn } from '../../data/staticText';
+import {Text, RoutingButton} from '../../Components';
 
 const { headerSectionTextHNo, headerSectionTextPNo } = staticTextHomeNo;
 const { headerSectionTextHEn, headerSectionTextPEn } = staticTextHomeEn;

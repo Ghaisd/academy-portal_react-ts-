@@ -26,6 +26,7 @@ export const studentsNo = [
     ProfileImage: Ghais,
     Github: 'https://github.com/Ghaisd',
     Linkedin: 'string',
+    CV: 'https://pdfhost.io/v/9cWxLIuUj_Ghais_CV'
   },
   {
     Id: 41843,
@@ -116,6 +117,7 @@ export const studentsEn = [
     ProfileImage: Ghais,
     Github: 'https://github.com/Ghaisd',
     Linkedin: 'www.linkedin.com/in/ghais-dahdouh-042308214',
+    CV: 'https://pdfhost.io/v/9cWxLIuUj_Ghais_CV'
   },
   {
     Id: 41843,

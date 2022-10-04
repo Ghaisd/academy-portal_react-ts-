@@ -5,9 +5,7 @@ import { Link } from 'react-router-dom';
 
 type props = {
   to: string;
-  // eslint-disable-next-line react/require-default-props
   sx?: SxProps | React.CSSProperties | undefined;
-  // eslint-disable-next-line max-len, react/require-default-props
   color?:
     | 'primary'
     | 'secondary'
@@ -20,7 +18,7 @@ type props = {
   children: string;
 };
 
-const CustomButton = ({ to, sx, color, children }: props) => (
+const RoutingButton = ({ to, sx, color, children }: props) => (
   <Button
     component={Link}
     to={to}
@@ -33,4 +31,4 @@ const CustomButton = ({ to, sx, color, children }: props) => (
   </Button>
 );
 
-export default CustomButton;
+export default RoutingButton;

@@ -2,7 +2,7 @@ import { Typography, Stack } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { StudentType } from '../../../api/api';
 import Student from './Student';
-import { studentsEn, studentsNo } from '../../../data/students';
+import { studentsEn, studentsNo } from '../../../data';
 import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
 
 const StudentsSection = () => {

@@ -1,18 +1,10 @@
 import { Stack } from '@mui/material';
 import { ArticleType } from '../../api/api';
-// import useArticles from '../../api/hooks/useArticles';
-import Loading from '../../Components/Loading';
 import Article from './Article';
-import articles from '../../data/articles';
+import {articles} from '../../data';
 
 const ArticlesPage = () => 
-  // const { data, error } = useArticles();
-  // if (error) return <h1>{error}</h1>;
-
    (
-    // eslint-disable-next-line react/jsx-no-useless-fragment
-    <>
-      {articles ? (
         <Stack
           display={{xs:'block',sm:'grid'}}
           justifyItems='center'
@@ -31,15 +23,6 @@ const ArticlesPage = () =>
             />
           ))}
         </Stack>
-      ) : (
-        <Loading
-          sx={{
-            py: '50vh',
-          }}
-        />
-      )}
-    </>
-  )
-;
+      );
 
 export default ArticlesPage;

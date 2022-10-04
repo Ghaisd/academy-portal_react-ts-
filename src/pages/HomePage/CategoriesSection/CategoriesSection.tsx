@@ -1,15 +1,10 @@
-import { Container, Stack } from '@mui/material';
-import Box from '@mui/material/Box';
-import { useState } from 'react';
+import { Container, Stack, Box } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { matchRoutes } from 'react-router-dom';
 import { routes } from '../../../App';
-import Text from '../../../Components/Text';
-import RoutingButton from '../../../Components/UI/RoutingButton';
+import {Text, RoutingButton} from '../../../Components';
 import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
-import { categoriesNo, categoriesEn } from '../../../data/categories';
-import { staticTextHomeNo, staticTextHomeEn } from '../../../data/staticText';
 import Category, { CategoryType } from './Category';
+import { categoriesNo, categoriesEn, staticTextHomeNo, staticTextHomeEn  } from '../../../data';
 
 const { categoriesSectionTextHNo, categoriesSectionTextPNo } = staticTextHomeNo;
 
@@ -38,9 +33,7 @@ const CategoriesSection = () => {
           textEn={categoriesSectionTextPEn}
           variant='body1'
         />
-      <Stack direction='row' sx={{
-        pb:{xs:'4rem'},
-      }}>
+      <Stack direction='row' pb={8}>
         <RoutingButton
           sx={{
             bgcolor: 'primary.light',

@@ -1,11 +1,10 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { Box , Stack, Typography } from '@mui/material';
+import { Box , Button, Stack, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import RoutingButton from '../../../Components/UI/RoutingButton';
-import CustomIcon from '../../../Components/UI/InteractiveIcon';
+import {InteractiveIcon} from '../../../Components';
 import { StudentType } from '../../../api/api';
-import {studentsNo, studentsEn} from '../../../data/students';
+import {studentsNo, studentsEn} from '../../../data';
 import { PickTxtLng } from '../../../customFunctions/PickTxtLng';
 
 const StudentPage = () => {
@@ -52,19 +51,23 @@ const StudentPage = () => {
         </Typography>
         <br />
         <Box mb={2}>
-          <CustomIcon href='https://linkedin.com' iconType='bi bi-linkedin' />
-          <CustomIcon href={student?.Github} iconType='bi bi-github' />
+          <InteractiveIcon href='https://linkedin.com' iconType='bi bi-linkedin' />
+          <InteractiveIcon href={student?.Github} iconType='bi bi-github' />
         </Box>
-        <RoutingButton
+        <Button
           sx={{
             bgcolor: 'warning.main',
+            color: 'text.primary',
+            '&:hover': {
+              bgcolor: 'warning.dark'
+            }
           }}
-          to='#'
+          href={student?.CV || '#'}
+          target='_blank'
           >
           {t('DownloadCV')}
-        </RoutingButton>
+        </Button>
       </Box>
-     
      </Stack>
      );
     };

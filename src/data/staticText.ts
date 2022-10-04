@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 export const staticTextHomeNo = {
   headerSectionTextHNo:
     ' Det handler om å gi flinke folk en sjanse, og å finne flinke folk som tar den.',

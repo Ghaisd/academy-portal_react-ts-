@@ -1,6 +1,5 @@
 import { Container } from '@mui/material';
-import ContactBoard from './ContactBoard';
-import ContactForm from './ContactForm';
+import {ContactBoard, ContactForm} from '..';
 
 const ContactPage = () => (
   <Container

@@ -1,7 +1,7 @@
 import { Typography, Box } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { routes } from '../../App';
-import RoutingButton from '../../Components/UI/RoutingButton';
+import {RoutingButton} from '../../Components';
 
 type props = {
   src: string;

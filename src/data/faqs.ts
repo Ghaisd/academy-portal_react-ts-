@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 export const faqsNo = [
   {
     headerText: 'Hvem kan delta på Ikomm Academy?',
